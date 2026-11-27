@@ -1,0 +1,4352 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>برای زهرا</title>
+  <meta name="theme-color" id="themeColorMeta" content="#FAF6F0" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23FAF6F0'/%3E%3Cg fill='none' stroke='%23C85A32' stroke-width='1.8' stroke-linecap='round'%3E%3Ccircle cx='16' cy='16' r='4.8'/%3E%3Cpath d='M16 4.5v3.5M16 24v3.5M4.5 16H8M24 16h3.5M7.9 7.9l2.5 2.5M21.6 21.6l2.5 2.5M24.1 7.9l-2.5 2.5M10.4 21.6l-2.5 2.5'/%3E%3C/g%3E%3Ccircle cx='16' cy='16' r='1.6' fill='%23C85A32'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #FAF6F0;
+      --bg-alt: #F2ECE1;
+      --surface: #FFFDF9;
+      --surface-hover: #F7F1E7;
+      --ink: #1D1B18;
+      --ink-soft: #544E46;
+      --ink-muted: #7C7469;
+      --accent: #C85A32;
+      --accent-hover: #AE4823;
+      --accent-soft: rgba(200, 90, 50, 0.11);
+      --sage: #3D6B59;
+      --sage-soft: rgba(61, 107, 89, 0.11);
+      --ochre: #C98E27;
+      --ochre-soft: rgba(201, 142, 39, 0.14);
+      --border: rgba(29, 27, 24, 0.13);
+      --border-strong: rgba(29, 27, 24, 0.28);
+      --shadow-sm: 0 2px 10px rgba(29, 27, 24, 0.04);
+      --shadow-md: 0 12px 32px rgba(29, 27, 24, 0.07);
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --font: 'Vazirmatn', system-ui, -apple-system, 'Segoe UI', Tahoma, sans-serif;
+      --max-w: 940px;
+      --ease: cubic-bezier(0.22, 1, 0.36, 1);
+      --page-journey-bg:
+        radial-gradient(ellipse 85% 15% at 78% 4%, rgba(235, 192, 108, 0.16), transparent 68%),
+        radial-gradient(ellipse 75% 14% at 18% 12%, rgba(208, 108, 70, 0.10), transparent 68%),
+        radial-gradient(ellipse 85% 18% at 82% 48%, rgba(107, 146, 122, 0.12), transparent 70%),
+        radial-gradient(ellipse 75% 16% at 18% 58%, rgba(126, 158, 128, 0.10), transparent 70%),
+        radial-gradient(ellipse 85% 16% at 76% 88%, rgba(224, 138, 96, 0.14), transparent 70%),
+        radial-gradient(ellipse 80% 15% at 22% 97%, rgba(232, 174, 114, 0.15), transparent 70%),
+        linear-gradient(
+          180deg,
+          #FCF7EE 0%,
+          #FAF1E6 14%,
+          #F7F3EB 30%,
+          #F2F4EC 46%,
+          #EDF2E7 58%,
+          #F5F2EA 72%,
+          #F9EFE4 86%,
+          #F7E7D9 100%
+        );
+    }
+
+    [data-theme="dark"] {
+      --bg: #151311;
+      --bg-alt: #1E1B18;
+      --surface: #23201C;
+      --surface-hover: #2C2823;
+      --ink: #F3EDE3;
+      --ink-soft: #C5BDB0;
+      --ink-muted: #938A7E;
+      --accent: #E27A53;
+      --accent-hover: #EE8C67;
+      --accent-soft: rgba(226, 122, 83, 0.15);
+      --sage: #6AA88F;
+      --sage-soft: rgba(106, 168, 143, 0.14);
+      --ochre: #E5B454;
+      --ochre-soft: rgba(229, 180, 84, 0.14);
+      --border: rgba(243, 237, 227, 0.12);
+      --border-strong: rgba(243, 237, 227, 0.26);
+      --shadow-sm: 0 2px 12px rgba(0, 0, 0, 0.25);
+      --shadow-md: 0 16px 36px rgba(0, 0, 0, 0.38);
+      --page-journey-bg:
+        radial-gradient(ellipse 85% 15% at 78% 4%, rgba(229, 180, 84, 0.08), transparent 68%),
+        radial-gradient(ellipse 75% 14% at 18% 12%, rgba(226, 122, 83, 0.07), transparent 68%),
+        radial-gradient(ellipse 85% 18% at 82% 48%, rgba(106, 168, 143, 0.08), transparent 70%),
+        radial-gradient(ellipse 75% 16% at 18% 58%, rgba(106, 168, 143, 0.06), transparent 70%),
+        radial-gradient(ellipse 85% 16% at 76% 88%, rgba(226, 122, 83, 0.09), transparent 70%),
+        radial-gradient(ellipse 80% 15% at 22% 97%, rgba(229, 180, 84, 0.07), transparent 70%),
+        linear-gradient(
+          180deg,
+          #171411 0%,
+          #191412 14%,
+          #151412 30%,
+          #131715 46%,
+          #121815 58%,
+          #151413 72%,
+          #181311 86%,
+          #1B1412 100%
+        );
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font);
+      background-color: var(--bg);
+      background-image: var(--page-journey-bg);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      color: var(--ink);
+      line-height: 1.9;
+      overflow-x: clip;
+      -webkit-font-smoothing: antialiased;
+      transition: background-color 0.35s var(--ease), color 0.35s var(--ease);
+    }
+
+    /* Subtle paper grain overlay */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.028;
+      background-image: radial-gradient(var(--ink) 0.6px, transparent 0.6px);
+      background-size: 18px 18px;
+    }
+
+    body.reduced-motion *,
+    body.reduced-motion *::before,
+    body.reduced-motion *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 3px;
+    }
+
+    button {
+      font-family: inherit;
+      cursor: pointer;
+      border: none;
+      background: none;
+      color: inherit;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* Top Utility & Progress Bar */
+    .top-bar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: color-mix(in srgb, var(--bg) 76%, transparent);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      transition: background-color 0.3s ease;
+    }
+
+    .top-bar-inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0.65rem 1.15rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    .brand-mark {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      font-weight: 700;
+      font-size: 0.98rem;
+      letter-spacing: -0.01em;
+      padding: 0.35rem 0.5rem;
+      border-radius: var(--radius-sm);
+      user-select: none;
+    }
+
+    .brand-mark:hover {
+      background: var(--accent-soft);
+    }
+
+    .brand-mark svg {
+      width: 22px;
+      height: 22px;
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .top-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .icon-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      min-width: 40px;
+      min-height: 40px;
+      padding: 0 0.65rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--ink-soft);
+      font-size: 0.8rem;
+      font-weight: 500;
+      transition: all 0.2s var(--ease);
+    }
+
+    .icon-btn:hover {
+      border-color: var(--border-strong);
+      color: var(--ink);
+      background: var(--surface-hover);
+    }
+
+    .icon-btn[aria-pressed="true"] {
+      background: var(--accent-soft);
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .icon-btn svg {
+      width: 17px;
+      height: 17px;
+      flex-shrink: 0;
+    }
+
+    .badge-count {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 20px;
+      height: 20px;
+      padding: 0 5px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #FFFDF9;
+      font-size: 0.72rem;
+      font-weight: 700;
+      line-height: 1;
+    }
+
+    .progress-track {
+      height: 2px;
+      width: 100%;
+      background: var(--border);
+      overflow: hidden;
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      background: var(--accent);
+      transition: width 0.25s ease-out;
+    }
+
+    /* Quick Chapter Navigation Strip */
+    .chapter-nav {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0.5rem 1.15rem 0;
+      display: flex;
+      gap: 0.4rem;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    .chapter-nav::-webkit-scrollbar {
+      display: none;
+    }
+
+    .chapter-pill {
+      flex-shrink: 0;
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--ink-muted);
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      transition: all 0.2s var(--ease);
+      white-space: nowrap;
+    }
+
+    .chapter-pill:hover {
+      color: var(--ink);
+      background: var(--bg-alt);
+    }
+
+    .chapter-pill.active {
+      color: var(--accent);
+      background: var(--accent-soft);
+      border-color: rgba(200, 90, 50, 0.25);
+    }
+
+    /* Main Container */
+    main {
+      position: relative;
+      z-index: 1;
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 1.15rem 4rem;
+    }
+
+    /* Opening Hero */
+    .hero {
+      min-height: calc(100svh - 70px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2.5rem 0.5rem 3.5rem;
+      position: relative;
+    }
+
+    .hero-frame {
+      width: 100%;
+      max-width: 720px;
+      padding: 2.75rem 1.5rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      background: var(--surface);
+      box-shadow: var(--shadow-md);
+      position: relative;
+    }
+
+    .hero-corner {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      color: var(--ink-muted);
+      opacity: 0.55;
+      pointer-events: none;
+    }
+
+    .hero-corner.tl { top: 14px; right: 14px; }
+    .hero-corner.tr { top: 14px; left: 14px; transform: scaleX(-1); }
+    .hero-corner.bl { bottom: 14px; right: 14px; transform: scaleY(-1); }
+    .hero-corner.br { bottom: 14px; left: 14px; transform: scale(-1); }
+
+    .hand-margin-note {
+      margin-top: 1.5rem;
+      display: flex;
+      justify-content: center;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .hand-margin-inner {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+      transform: rotate(-4.5deg);
+      color: var(--ink-muted);
+      opacity: 0.78;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+    }
+
+    .hand-margin-inner svg {
+      width: 66px;
+      height: 10px;
+      color: var(--ochre);
+      opacity: 0.85;
+      overflow: visible;
+    }
+
+    /* Minimal Fine-Line Celebration Sparks */
+    .spark-layer {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 140;
+      overflow: hidden;
+    }
+
+    .spark-item {
+      position: absolute;
+      top: -24px;
+      opacity: 0;
+      animation: sparkFall var(--dur, 2.2s) cubic-bezier(0.2, 0.7, 0.35, 1) var(--delay, 0s) forwards;
+    }
+
+    @keyframes sparkFall {
+      0% {
+        opacity: 0;
+        transform: translate3d(0, 0, 0) rotate(0deg) scale(0.7);
+      }
+      14% {
+        opacity: 0.92;
+      }
+      80% {
+        opacity: 0.75;
+      }
+      100% {
+        opacity: 0;
+        transform: translate3d(var(--drift, 24px), 92vh, 0) rotate(var(--rot, 160deg)) scale(1);
+      }
+    }
+
+    .hero-emblem {
+      width: 76px;
+      height: 76px;
+      margin: 0 auto 1.35rem;
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-emblem svg {
+      width: 100%;
+      height: 100%;
+      animation: slowSpin 38s linear infinite;
+    }
+
+    @keyframes slowSpin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--sage);
+      background: var(--sage-soft);
+      padding: 0.3rem 0.85rem;
+      border-radius: 999px;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.75rem, 5vw, 2.75rem);
+      font-weight: 800;
+      line-height: 1.45;
+      letter-spacing: -0.02em;
+      color: var(--ink);
+      margin-bottom: 1.1rem;
+    }
+
+    .hero h1 .accent-word {
+      color: var(--accent);
+      position: relative;
+      display: inline-block;
+      isolation: isolate;
+      z-index: 0;
+      padding-bottom: 0.16em;
+    }
+
+    .hero h1 .hand-underline {
+      position: absolute;
+      left: -4%;
+      right: -4%;
+      bottom: -0.06em;
+      width: 108%;
+      height: 0.42em;
+      pointer-events: none;
+      overflow: visible;
+      z-index: -1;
+    }
+
+    .hero h1 .hand-underline .stroke-main {
+      stroke: var(--ochre);
+      stroke-opacity: 0.72;
+      stroke-dasharray: 240;
+      stroke-dashoffset: 0;
+      animation: drawHandLine 1.1s var(--ease) 0.25s both;
+    }
+
+    .hero h1 .hand-underline .stroke-echo {
+      stroke: var(--accent);
+      stroke-opacity: 0.32;
+      stroke-dasharray: 220;
+      stroke-dashoffset: 0;
+      animation: drawHandLine 1.25s var(--ease) 0.45s both;
+    }
+
+    @keyframes drawHandLine {
+      from { stroke-dashoffset: 240; }
+      to { stroke-dashoffset: 0; }
+    }
+
+    .hero-sub {
+      font-size: clamp(0.98rem, 2.4vw, 1.12rem);
+      color: var(--ink-soft);
+      max-width: 540px;
+      margin: 0 auto 2rem;
+      line-height: 1.95;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      min-height: 50px;
+      padding: 0.8rem 1.85rem;
+      border-radius: 999px;
+      background: var(--ink);
+      color: var(--bg);
+      font-size: 0.98rem;
+      font-weight: 600;
+      box-shadow: var(--shadow-sm);
+      transition: transform 0.2s var(--ease), background-color 0.2s var(--ease), box-shadow 0.2s var(--ease);
+    }
+
+    .btn-primary:hover {
+      background: var(--accent);
+      color: #FFFDF9;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(200, 90, 50, 0.24);
+    }
+
+    .btn-primary:active {
+      transform: translateY(0);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+      min-height: 44px;
+      padding: 0.55rem 1.15rem;
+      border-radius: 999px;
+      border: 1px solid var(--border-strong);
+      background: var(--surface);
+      color: var(--ink);
+      font-size: 0.88rem;
+      font-weight: 500;
+      transition: all 0.2s var(--ease);
+    }
+
+    .btn-secondary:hover {
+      background: var(--bg-alt);
+      border-color: var(--ink);
+    }
+
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      min-height: 40px;
+      padding: 0.4rem 0.85rem;
+      border-radius: 999px;
+      color: var(--ink-soft);
+      font-size: 0.84rem;
+      font-weight: 500;
+      transition: all 0.2s var(--ease);
+    }
+
+    .btn-ghost:hover {
+      background: var(--bg-alt);
+      color: var(--ink);
+    }
+
+    .btn-ghost.saved {
+      color: var(--accent);
+      background: var(--accent-soft);
+    }
+
+    /* Journey Chapters Container */
+    .journey {
+      display: flex;
+      flex-direction: column;
+      gap: 4.5rem;
+      padding-top: 1.5rem;
+    }
+
+    .chapter {
+      scroll-margin-top: 105px;
+    }
+
+    .chapter.reveal-ready {
+      transition: opacity 0.6s var(--ease), transform 0.6s var(--ease);
+    }
+
+    .chapter.reveal-pending {
+      opacity: 0;
+      transform: translateY(18px);
+    }
+
+    .chapter.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    body.reduced-motion .chapter.reveal-pending {
+      opacity: 1;
+      transform: none;
+    }
+
+    .compliment-stage,
+    .mood-stage {
+      touch-action: pan-y;
+    }
+
+    .swipe-hint {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55rem;
+      font-size: 0.76rem;
+      color: var(--ink-muted);
+      user-select: none;
+      margin-top: -0.25rem;
+    }
+
+    .swipe-arrow-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.2rem 0.35rem;
+      color: var(--ochre);
+      opacity: 0.82;
+      transition: opacity 0.2s ease, transform 0.2s var(--ease);
+    }
+
+    .swipe-arrow-btn:hover {
+      opacity: 1;
+      transform: scale(1.08);
+    }
+
+    .swipe-arrow-btn svg {
+      width: 34px;
+      height: 16px;
+      overflow: visible;
+    }
+
+    .swipe-arrow-btn.dir-right svg {
+      animation: nudgeRight 2.8s var(--ease) infinite;
+    }
+
+    .swipe-arrow-btn.dir-left svg {
+      animation: nudgeLeft 2.8s var(--ease) infinite;
+    }
+
+    @keyframes nudgeRight {
+      0%, 100% { transform: translateX(0); }
+      50% { transform: translateX(3px); }
+    }
+
+    @keyframes nudgeLeft {
+      0%, 100% { transform: translateX(0); }
+      50% { transform: translateX(-3px); }
+    }
+
+    .chapter-head {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-bottom: 1.75rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.15rem;
+    }
+
+    .chapter-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .chapter-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      border: 1px solid var(--accent);
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+
+    .chapter-head h2 {
+      font-size: clamp(1.38rem, 3.6vw, 1.95rem);
+      font-weight: 800;
+      line-height: 1.45;
+      letter-spacing: -0.015em;
+    }
+
+    .chapter-desc {
+      font-size: 0.95rem;
+      color: var(--ink-soft);
+      max-width: 640px;
+    }
+
+    /* Fine-line divider ornament */
+    .ink-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.9rem;
+      color: var(--ink-muted);
+      opacity: 0.65;
+      margin: 0.5rem 0;
+    }
+
+    .ink-divider::before,
+    .ink-divider::after {
+      content: "";
+      height: 1px;
+      flex: 1;
+      max-width: 140px;
+      background: var(--border-strong);
+    }
+
+    /* Editorial Card Base */
+    .editorial-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem 1.4rem;
+      box-shadow: var(--shadow-sm);
+      position: relative;
+    }
+
+    @media (min-width: 640px) {
+      .editorial-box {
+        padding: 2.25rem 2.25rem;
+      }
+      .hero-frame {
+        padding: 3.5rem 3rem;
+      }
+    }
+
+    /* 01 — Daily Smile */
+    .daily-card {
+      background: linear-gradient(145deg, var(--surface), var(--bg-alt));
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 2rem 1.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .daily-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      margin-bottom: 1.35rem;
+    }
+
+    .date-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 0.84rem;
+      font-weight: 600;
+      color: var(--ochre);
+      background: var(--ochre-soft);
+      padding: 0.3rem 0.8rem;
+      border-radius: 999px;
+    }
+
+    .daily-quote {
+      font-size: clamp(1.18rem, 3vw, 1.52rem);
+      font-weight: 600;
+      line-height: 1.85;
+      color: var(--ink);
+      margin-bottom: 1.5rem;
+      max-width: 680px;
+    }
+
+    .action-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.55rem;
+    }
+
+    /* 02 — Personal Appreciation Deck */
+    .filter-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-bottom: 1.35rem;
+    }
+
+    .filter-chip {
+      min-height: 38px;
+      padding: 0.35rem 0.9rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--ink-soft);
+      font-size: 0.84rem;
+      font-weight: 500;
+      transition: all 0.2s var(--ease);
+    }
+
+    .filter-chip:hover {
+      border-color: var(--border-strong);
+      color: var(--ink);
+    }
+
+    .filter-chip.active {
+      background: var(--ink);
+      color: var(--bg);
+      border-color: var(--ink);
+    }
+
+    .compliment-stage {
+      min-height: 230px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1.5rem;
+      padding: 1.85rem 1.4rem;
+      border-radius: var(--radius-lg);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+      position: relative;
+    }
+
+    @media (min-width: 640px) {
+      .compliment-stage {
+        padding: 2.35rem 2.4rem;
+      }
+    }
+
+    .compliment-tag-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      font-size: 0.82rem;
+      color: var(--ink-muted);
+    }
+
+    .facet-badge {
+      color: var(--sage);
+      background: var(--sage-soft);
+      padding: 0.22rem 0.75rem;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+
+    .compliment-text {
+      font-size: clamp(1.15rem, 2.9vw, 1.48rem);
+      font-weight: 600;
+      line-height: 1.85;
+      color: var(--ink);
+      transition: opacity 0.22s ease, transform 0.22s var(--ease);
+    }
+
+    .compliment-text.switching {
+      opacity: 0;
+      transform: translateY(6px);
+    }
+
+    .compliment-footer {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+    }
+
+    /* 03 — Unexpected Compliments Machine (Stamp / Ticket Dispenser) */
+    .machine-wrap {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      align-items: center;
+    }
+
+    @media (min-width: 720px) {
+      .machine-wrap {
+        grid-template-columns: 280px 1fr;
+      }
+    }
+
+    .machine-console {
+      background: var(--bg-alt);
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem 1.35rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .stamp-btn {
+      width: 112px;
+      height: 112px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #FFFDF9;
+      border: 4px solid var(--surface);
+      box-shadow: 0 0 0 1px var(--accent), 0 10px 24px rgba(200, 90, 50, 0.28);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.25rem;
+      font-weight: 700;
+      font-size: 0.88rem;
+      transition: transform 0.16s var(--ease), box-shadow 0.16s var(--ease);
+    }
+
+    .stamp-btn:hover {
+      transform: scale(1.04);
+    }
+
+    .stamp-btn:active,
+    .stamp-btn.pressing {
+      transform: scale(0.94);
+      box-shadow: 0 0 0 1px var(--accent), 0 4px 12px rgba(200, 90, 50, 0.22);
+    }
+
+    .ticket-paper {
+      background: var(--surface);
+      border: 1.5px dashed var(--border-strong);
+      border-radius: var(--radius-md);
+      padding: 1.75rem 1.5rem;
+      position: relative;
+      min-height: 200px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 1.15rem;
+      transition: transform 0.3s var(--ease), opacity 0.25s ease;
+    }
+
+    .ticket-paper.printing {
+      opacity: 0.35;
+      transform: translateY(-8px);
+    }
+
+    .ticket-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.78rem;
+      color: var(--ink-muted);
+      border-bottom: 1px dotted var(--border-strong);
+      padding-bottom: 0.6rem;
+    }
+
+    .ticket-body {
+      font-size: 1.14rem;
+      font-weight: 600;
+      line-height: 1.9;
+      color: var(--ink);
+    }
+
+    /* 04 — Self-Worth Editorial Notes (Accordion) */
+    .worth-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .worth-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .worth-item.open {
+      border-color: var(--border-strong);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .worth-trigger {
+      width: 100%;
+      text-align: right;
+      padding: 1.15rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      font-size: 1.02rem;
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .worth-trigger:hover {
+      background: var(--surface-hover);
+    }
+
+    .worth-index {
+      color: var(--accent);
+      font-size: 0.85rem;
+      font-weight: 700;
+      margin-left: 0.65rem;
+    }
+
+    .worth-chevron {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      color: var(--ink-muted);
+      transition: transform 0.25s var(--ease);
+    }
+
+    .worth-item.open .worth-chevron {
+      transform: rotate(180deg);
+      color: var(--accent);
+    }
+
+    .worth-panel {
+      display: none;
+      padding: 0 1.25rem 1.35rem;
+      color: var(--ink-soft);
+      font-size: 0.96rem;
+      line-height: 1.95;
+      border-top: 1px solid var(--border);
+      padding-top: 1rem;
+    }
+
+    .worth-item.open .worth-panel {
+      display: block;
+    }
+
+    /* 05 — When You Need Someone */
+    .safe-space-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-right: 4px solid var(--sage);
+      border-radius: var(--radius-lg);
+      padding: 2rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 640px) {
+      .safe-space-card {
+        padding: 2.5rem 2.4rem;
+      }
+    }
+
+    .safe-lead {
+      font-size: clamp(1.18rem, 3vw, 1.45rem);
+      font-weight: 700;
+      line-height: 1.75;
+      color: var(--ink);
+    }
+
+    .safe-promise {
+      font-size: 1rem;
+      color: var(--sage);
+      font-weight: 600;
+      background: var(--sage-soft);
+      padding: 1rem 1.2rem;
+      border-radius: var(--radius-md);
+      line-height: 1.85;
+    }
+
+    .need-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .need-pill {
+      min-height: 42px;
+      padding: 0.45rem 0.95rem;
+      border-radius: 999px;
+      border: 1px solid var(--border-strong);
+      background: var(--bg);
+      color: var(--ink-soft);
+      font-size: 0.86rem;
+      font-weight: 500;
+      transition: all 0.2s var(--ease);
+    }
+
+    .need-pill:hover {
+      border-color: var(--sage);
+      color: var(--ink);
+    }
+
+    .need-pill.active {
+      background: var(--sage);
+      border-color: var(--sage);
+      color: #FFFDF9;
+    }
+
+    .need-response {
+      background: var(--bg-alt);
+      border-radius: var(--radius-md);
+      padding: 1.25rem 1.35rem;
+      font-size: 0.98rem;
+      color: var(--ink);
+      line-height: 1.95;
+      border: 1px solid var(--border);
+    }
+
+    /* 06 — Smile Generator (45 unique messages) */
+    .smile-box {
+      text-align: center;
+      padding: 2.25rem 1.35rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .smile-counter {
+      font-size: 0.82rem;
+      color: var(--ink-muted);
+      margin-bottom: 1rem;
+    }
+
+    .smile-display {
+      min-height: 112px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: clamp(1.16rem, 3vw, 1.5rem);
+      font-weight: 700;
+      line-height: 1.8;
+      color: var(--ink);
+      max-width: 640px;
+      margin: 0 auto 1.65rem;
+      transition: opacity 0.2s ease, transform 0.2s var(--ease);
+    }
+
+    .smile-display.pop {
+      opacity: 0;
+      transform: scale(0.97);
+    }
+
+    .smile-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 0.65rem;
+    }
+
+    /* 07 — Mood Collection (8 categories) */
+    .mood-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.55rem;
+      margin-bottom: 1.35rem;
+    }
+
+    .mood-grid .mood-btn:last-child:nth-child(odd) {
+      grid-column: 1 / -1;
+    }
+
+    @media (min-width: 640px) {
+      .mood-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .mood-grid .mood-btn:last-child:nth-child(odd) {
+        grid-column: auto;
+      }
+    }
+
+    .mood-btn {
+      min-height: 52px;
+      padding: 0.65rem 0.75rem;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--ink-soft);
+      font-size: 0.84rem;
+      font-weight: 600;
+      line-height: 1.45;
+      text-align: center;
+      transition: all 0.2s var(--ease);
+    }
+
+    .mood-btn:hover {
+      border-color: var(--border-strong);
+      color: var(--ink);
+      background: var(--surface-hover);
+    }
+
+    .mood-btn.active {
+      background: var(--accent);
+      color: #FFFDF9;
+      border-color: var(--accent);
+    }
+
+    .mood-stage {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.8rem 1.4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .mood-message {
+      font-size: 1.12rem;
+      font-weight: 600;
+      line-height: 1.9;
+      color: var(--ink);
+      min-height: 76px;
+      will-change: transform, opacity;
+    }
+
+    .compliment-stage,
+    .mood-stage {
+      overflow: hidden;
+    }
+
+    .daily-quote,
+    .compliment-text {
+      will-change: transform, opacity;
+    }
+
+    .mood-nav {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.65rem;
+      padding-top: 0.9rem;
+      border-top: 1px solid var(--border);
+    }
+
+    /* 08 — Playful Mini-Game (Fine-Line Memory Match) */
+    .game-meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .game-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    .stat-pill {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--ink-soft);
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      padding: 0.35rem 0.8rem;
+      border-radius: 999px;
+    }
+
+    .memory-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.65rem;
+      max-width: 540px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 520px) {
+      .memory-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 0.8rem;
+      }
+    }
+
+    .mem-card {
+      aspect-ratio: 1 / 1;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-strong);
+      background: var(--bg-alt);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.25rem;
+      position: relative;
+      transition: transform 0.22s var(--ease), background-color 0.22s ease, border-color 0.22s ease;
+    }
+
+    .mem-card:hover:not(:disabled) {
+      transform: translateY(-2px);
+      border-color: var(--accent);
+    }
+
+    .mem-card .card-back {
+      color: var(--ink-muted);
+      opacity: 0.55;
+    }
+
+    .mem-card .card-front {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.2rem;
+      color: var(--ink);
+    }
+
+    .mem-card .card-front span {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--ink-soft);
+    }
+
+    .mem-card.flipped,
+    .mem-card.matched {
+      background: var(--surface);
+      border-color: var(--accent);
+    }
+
+    .mem-card.flipped .card-back,
+    .mem-card.matched .card-back {
+      display: none;
+    }
+
+    .mem-card.flipped .card-front,
+    .mem-card.matched .card-front {
+      display: flex;
+    }
+
+    .mem-card.matched {
+      border-color: var(--sage);
+      background: var(--sage-soft);
+    }
+
+    .mem-card.matched .card-front {
+      color: var(--sage);
+    }
+
+    .game-reward {
+      margin-top: 1.35rem;
+      padding: 1.25rem 1.35rem;
+      border-radius: var(--radius-md);
+      background: var(--ochre-soft);
+      border: 1px solid var(--ochre);
+      color: var(--ink);
+      display: none;
+      text-align: center;
+      line-height: 1.85;
+    }
+
+    .game-reward.visible {
+      display: block;
+    }
+
+    /* Fine-Line Tattoo Sketchpad */
+    .sketch-wrap {
+      margin-top: 2rem;
+      padding-top: 1.75rem;
+      border-top: 1px dashed var(--border-strong);
+    }
+
+    .sketch-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.65rem;
+      margin-bottom: 0.85rem;
+    }
+
+    .ink-swatches {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+    }
+
+    .swatch {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 2px solid var(--surface);
+      box-shadow: 0 0 0 1px var(--border-strong);
+      transition: transform 0.15s ease;
+    }
+
+    .swatch.active {
+      transform: scale(1.14);
+      box-shadow: 0 0 0 2px var(--accent);
+    }
+
+    .sketch-canvas-box {
+      --paper-bg: #FAF6F0;
+      --paper-dot: rgba(29, 27, 24, 0.22);
+      width: 100%;
+      height: 250px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-strong);
+      background-color: var(--paper-bg);
+      overflow: hidden;
+      position: relative;
+      transition: background-color 0.25s ease;
+    }
+
+    #inkCanvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+      touch-action: none;
+      cursor: crosshair;
+    }
+
+    .sketch-hint {
+      position: absolute;
+      bottom: 10px;
+      left: 14px;
+      font-size: 0.74rem;
+      color: var(--ink-muted);
+      pointer-events: none;
+    }
+
+    .sketch-canvas-box.dot-grid {
+      background-image: radial-gradient(var(--paper-dot) 1.15px, transparent 1.15px);
+      background-size: 18px 18px;
+      background-position: 9px 9px;
+    }
+
+    .paper-sep {
+      width: 1px;
+      height: 18px;
+      background: var(--border-strong);
+      margin: 0 0.15rem;
+    }
+
+    .color-picker-wrap {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      min-height: 38px;
+      padding: 0.25rem 0.75rem 0.25rem 0.4rem;
+      border-radius: 999px;
+      border: 1px solid var(--border-strong);
+      background: var(--surface);
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--ink-soft);
+      cursor: pointer;
+      position: relative;
+      transition: border-color 0.2s ease, transform 0.15s ease;
+    }
+
+    .color-picker-wrap:hover {
+      border-color: var(--ink);
+    }
+
+    .color-picker-dot {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background-color: #1D1B18;
+      border: 2px solid var(--surface);
+      box-shadow: 0 0 0 1px var(--border-strong);
+      flex-shrink: 0;
+      transition: background-color 0.15s ease;
+    }
+
+    .color-picker-input {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      cursor: pointer;
+    }
+
+    .paper-btn[data-paper="#FAF6F0"] {
+      background: #FAF6F0;
+      color: #1D1B18;
+      border: 1.5px solid #D9CEBC;
+    }
+
+    .paper-btn[data-paper="#FFFFFF"] {
+      background: #FFFFFF;
+      color: #1D1B18;
+      border: 1.5px solid #D4D0C8;
+    }
+
+    .paper-btn[data-paper="#181614"] {
+      background: #181614;
+      color: #F3EDE3;
+      border: 1.5px solid #3C3732;
+    }
+
+    .paper-btn.active {
+      box-shadow: 0 0 0 2px var(--accent);
+      border-color: var(--accent);
+    }
+
+    .sketch-tools-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.4rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .tool-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.35rem;
+      min-height: 36px;
+      padding: 0.3rem 0.75rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--ink-soft);
+      font-size: 0.78rem;
+      font-weight: 500;
+      transition: all 0.18s var(--ease);
+    }
+
+    .tool-pill:hover {
+      border-color: var(--border-strong);
+      color: var(--ink);
+    }
+
+    .tool-pill.active {
+      background: var(--ink);
+      color: var(--bg);
+      border-color: var(--ink);
+    }
+
+    .tool-pill:disabled {
+      opacity: 0.42;
+      cursor: not-allowed;
+    }
+
+    .nib-dot {
+      display: inline-block;
+      border-radius: 50%;
+      background: currentColor;
+    }
+
+    /* Color Palette of the Day (Chapter 01) */
+    .daily-palette {
+      margin: 0 0 1.45rem;
+      padding: 0.95rem 1rem;
+      border-radius: var(--radius-md);
+      background: var(--surface);
+      border: 1px solid var(--border);
+    }
+
+    .daily-palette-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+      font-size: 0.78rem;
+      color: var(--ink-muted);
+    }
+
+    .daily-palette-name {
+      font-weight: 700;
+      color: var(--ink-soft);
+    }
+
+    .palette-swatches {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.5rem;
+    }
+
+    @media (min-width: 520px) {
+      .palette-swatches {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .palette-chip {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      padding: 0.45rem 0.6rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border);
+      background: var(--bg);
+      transition: transform 0.18s var(--ease), border-color 0.18s ease;
+      text-align: right;
+    }
+
+    .palette-chip:hover {
+      transform: translateY(-1px);
+      border-color: var(--border-strong);
+    }
+
+    .palette-color-box {
+      width: 26px;
+      height: 26px;
+      border-radius: 6px;
+      flex-shrink: 0;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+    }
+
+    .palette-hex {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.76rem;
+      font-weight: 600;
+      color: var(--ink-soft);
+      direction: ltr;
+    }
+
+    /* Calm Breathing Circle (Chapter 05) */
+    .breath-wrap {
+      margin-top: 0.25rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.9rem;
+    }
+
+    .breath-collapse {
+      width: 100%;
+      display: grid;
+      grid-template-rows: 0fr;
+      opacity: 0;
+      transform: translateY(-6px);
+      pointer-events: none;
+      transition: grid-template-rows 0.42s var(--ease), opacity 0.36s var(--ease), transform 0.42s var(--ease);
+    }
+
+    .breath-collapse.open {
+      grid-template-rows: 1fr;
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+
+    .breath-collapse-inner {
+      overflow: hidden;
+    }
+
+    .breath-panel {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.9rem;
+      padding: 1.5rem 1rem;
+      border-radius: var(--radius-md);
+      background: var(--bg);
+      border: 1px solid var(--border);
+      text-align: center;
+    }
+
+    .breath-stage {
+      width: 148px;
+      height: 148px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .breath-ring-outer {
+      position: absolute;
+      inset: 6px;
+      border-radius: 50%;
+      border: 1px dashed var(--border-strong);
+      opacity: 0.6;
+    }
+
+    .breath-circle {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      border: 1.8px solid var(--sage);
+      background: var(--sage-soft);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transform: scale(1);
+      transition: transform 4s ease-in-out;
+    }
+
+    .breath-circle.inhale,
+    .breath-circle.hold {
+      transform: scale(1.78);
+    }
+
+    .breath-circle.exhale {
+      transform: scale(1);
+    }
+
+    .breath-count {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--sage);
+      line-height: 1.1;
+    }
+
+    .breath-phase {
+      font-size: 0.96rem;
+      font-weight: 700;
+      color: var(--ink);
+    }
+
+    .breath-meta {
+      font-size: 0.78rem;
+      color: var(--ink-muted);
+    }
+
+    /* 09 — Closing Experience */
+    .closing-card {
+      background: var(--surface);
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      box-shadow: var(--shadow-md);
+      position: relative;
+    }
+
+    @media (min-width: 640px) {
+      .closing-card {
+        padding: 3.5rem 3rem;
+      }
+    }
+
+    .closing-body {
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      font-size: 1.05rem;
+      line-height: 2.05;
+      color: var(--ink-soft);
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .closing-signature {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+      font-size: 1.12rem;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.9;
+    }
+
+    .secret-star-btn {
+      margin-top: 2rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      color: var(--ink-muted);
+      opacity: 0.45;
+      transition: all 0.25s var(--ease);
+    }
+
+    .secret-star-btn:hover {
+      opacity: 1;
+      color: var(--ochre);
+      transform: rotate(45deg) scale(1.1);
+    }
+
+    /* Modals & Drawers */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 100;
+      background: rgba(20, 18, 15, 0.55);
+      backdrop-filter: blur(4px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+
+    .modal-backdrop.open {
+      display: flex;
+    }
+
+    .modal-card {
+      width: 100%;
+      max-width: 540px;
+      max-height: 85svh;
+      overflow-y: auto;
+      background: var(--surface);
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-lg);
+      padding: 1.65rem 1.4rem;
+      box-shadow: var(--shadow-md);
+      position: relative;
+    }
+
+    .modal-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-bottom: 0.9rem;
+      margin-bottom: 1.15rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .modal-head h3 {
+      font-size: 1.15rem;
+      font-weight: 800;
+    }
+
+    .saved-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .saved-item {
+      background: var(--bg-alt);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 0.9rem 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      font-size: 0.92rem;
+      line-height: 1.8;
+    }
+
+    .saved-item-actions {
+      display: flex;
+      justify-content: flex-end;
+      gap: 0.4rem;
+    }
+
+    .badge-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.6rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .ach-card {
+      padding: 0.75rem;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border);
+      background: var(--bg);
+      opacity: 0.52;
+      font-size: 0.82rem;
+      line-height: 1.55;
+    }
+
+    .ach-card.unlocked {
+      opacity: 1;
+      border-color: var(--sage);
+      background: var(--sage-soft);
+    }
+
+    .ach-title {
+      font-weight: 700;
+      color: var(--ink);
+      display: block;
+      margin-bottom: 0.15rem;
+    }
+
+    .secret-notes-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.85rem;
+    }
+
+    .secret-note {
+      padding: 1rem 1.1rem;
+      border-radius: var(--radius-md);
+      background: var(--bg-alt);
+      border-right: 3px solid var(--ochre);
+      font-size: 0.95rem;
+      line-height: 1.9;
+    }
+
+    /* Toast */
+    .toast {
+      position: fixed;
+      bottom: 1.25rem;
+      left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      z-index: 120;
+      background: var(--ink);
+      color: var(--bg);
+      padding: 0.65rem 1.2rem;
+      border-radius: 999px;
+      font-size: 0.86rem;
+      font-weight: 500;
+      box-shadow: var(--shadow-md);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease, transform 0.25s var(--ease);
+      max-width: calc(100vw - 2rem);
+      text-align: center;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @media (max-width: 440px) {
+      .hide-xs {
+        display: none;
+      }
+      .top-bar-inner {
+        padding: 0.55rem 0.85rem;
+      }
+      main {
+        padding: 0 0.85rem 3.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Sticky Top Utility Bar -->
+  <header class="top-bar">
+    <div class="top-bar-inner">
+      <button type="button" class="brand-mark" id="brandSecretTrigger" aria-label="برای زهرا">
+        <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true">
+          <circle cx="14" cy="14" r="4.5" />
+          <path d="M14 2.5v4M14 21.5v4M2.5 14h4M21.5 14h4M5.9 5.9l2.8 2.8M19.3 19.3l2.8 2.8M22.1 5.9l-2.8 2.8M8.7 19.3l-2.8 2.8" />
+        </svg>
+        <span>برای زهرا</span>
+      </button>
+
+      <div class="top-controls">
+        <button type="button" class="icon-btn" id="openPocketBtn" aria-label="پیام‌های ذخیره شده و نشان‌ها">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
+          </svg>
+          <span class="hide-xs">ذخیره‌ها</span>
+          <span class="badge-count" id="pocketCount">۰</span>
+        </button>
+
+        <button type="button" class="icon-btn" id="soundToggle" aria-pressed="false" aria-label="تغییر وضعیت صدا" title="صدای ریز دکمه‌ها">
+          <svg id="soundIconOff" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+            <line x1="23" y1="9" x2="17" y2="15" />
+            <line x1="17" y1="9" x2="23" y2="15" />
+          </svg>
+          <svg id="soundIconOn" style="display:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+            <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14" />
+          </svg>
+        </button>
+
+        <button type="button" class="icon-btn" id="motionToggle" aria-pressed="false" aria-label="کم کردن حرکت صفحه" title="حرکت کمتر">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="9" />
+            <path d="M8 12h8" />
+          </svg>
+        </button>
+
+        <button type="button" class="icon-btn" id="themeToggle" aria-pressed="false" aria-label="تغییر حالت روشن و تاریک" title="حالت روز و شب">
+          <svg id="themeIconMoon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </svg>
+          <svg id="themeIconSun" style="display:none" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <nav class="chapter-nav" aria-label="بخش‌های صفحه">
+      <a class="chapter-pill" href="#daily">۰۱ پیام امروز</a>
+      <a class="chapter-pill" href="#appreciation">۰۲ چند تا چیز واقعی</a>
+      <a class="chapter-pill" href="#machine">۰۳ تعریف یهویی</a>
+      <a class="chapter-pill" href="#worth">۰۴ یادآوری</a>
+      <a class="chapter-pill" href="#listen">۰۵ وقتی حرف داری</a>
+      <a class="chapter-pill" href="#smile-gen">۰۶ دکمه لبخند</a>
+      <a class="chapter-pill" href="#moods">۰۷ الان چطوری؟</a>
+      <a class="chapter-pill" href="#play">۰۸ بازی و خط‌خطی</a>
+      <a class="chapter-pill" href="#closing">۰۹ حرف آخر</a>
+    </nav>
+
+    <div class="progress-track" aria-hidden="true">
+      <div class="progress-fill" id="scrollProgress"></div>
+    </div>
+  </header>
+
+  <main>
+    <!-- 00 — Opening Experience -->
+    <section class="hero" id="top">
+      <div class="hero-frame">
+        <svg class="hero-corner tl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M22 2H6C3.8 2 2 3.8 2 6v16" /></svg>
+        <svg class="hero-corner tr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M22 2H6C3.8 2 2 3.8 2 6v16" /></svg>
+        <svg class="hero-corner bl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M22 2H6C3.8 2 2 3.8 2 6v16" /></svg>
+        <svg class="hero-corner br" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M22 2H6C3.8 2 2 3.8 2 6v16" /></svg>
+
+        <div class="hero-emblem" aria-hidden="true">
+          <svg viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round">
+            <circle cx="40" cy="40" r="14" />
+            <circle cx="40" cy="40" r="24" stroke-dasharray="2 5" />
+            <path d="M40 6v12M40 62v12M6 40h12M62 40h12M16 16l8.5 8.5M55.5 55.5L64 64M64 16l-8.5 8.5M24.5 55.5L16 64" />
+            <circle cx="40" cy="40" r="3" fill="currentColor" />
+          </svg>
+        </div>
+
+        <div class="eyebrow">
+          <span id="heroGreeting">سلام زهرا</span>
+        </div>
+
+        <h1>
+          این صفحه فقط واسه یه چیز ساخته شده:
+          اینکه یه کم
+          <span class="accent-word">لبخند بزنی<svg class="hand-underline" viewBox="0 0 210 20" fill="none" preserveAspectRatio="none" aria-hidden="true"><path class="stroke-main" d="M4 13.5 C 48 5.2, 138 4.4, 206 10.8" stroke-width="3.4" stroke-linecap="round" /><path class="stroke-echo" d="M26 17.2 C 82 11.4, 146 10.8, 194 14.8" stroke-width="1.45" stroke-linecap="round" /></svg></span>.
+        </h1>
+
+        <p class="hero-sub">
+          هیچ حرف قلمبه‌سلمبه و نصیحتی اینجا نیست.
+          فقط چند تا پیام ساده و واقعی نوشتم که هر وقت حوصله‌ت سر رفت یا روزت سنگین بود،
+          یه سر بیای اینجا و بدونی چقدر وجودت برای من مهمه.
+        </p>
+
+        <button type="button" class="btn-primary" id="startJourneyBtn">
+          <span>بزن بریم ببینیم چی اینجاست</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 5v14M5 12l7 7 7-7" />
+          </svg>
+        </button>
+
+        <div class="hand-margin-note" aria-hidden="true">
+          <span class="hand-margin-inner">
+            <span>تو بهترینی ♡</span>
+            <svg viewBox="0 0 72 10" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+              <path d="M3 7.5 C 22 2.8, 50 2.6, 69 6.2" />
+            </svg>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <div class="journey">
+      <!-- 01 — Daily Smile -->
+      <section class="chapter" id="daily">
+        <div class="chapter-head">
+          <div class="chapter-meta">
+            <span class="chapter-num">۰۱</span>
+            <span>پیامِ امروز</span>
+          </div>
+          <h2>واسه امروزت</h2>
+          <p class="chapter-desc">هر روز که این صفحه رو باز کنی، یه پیام دیگه برات میاد.</p>
+        </div>
+
+        <div class="daily-card">
+          <div class="daily-top">
+            <span class="date-tag" id="dailyDateLabel">امروز</span>
+            <span style="font-size:0.8rem;color:var(--ink-muted)" id="dailyIndexLabel">پیام روز</span>
+          </div>
+          <p class="daily-quote" id="dailyQuoteText" aria-live="polite"></p>
+          <div class="daily-palette" aria-label="پالت رنگ امروز">
+            <div class="daily-palette-head">
+              <span>پالت رنگِ امروز: <span class="daily-palette-name" id="paletteName"></span></span>
+              <span>برای کپی کد رنگ بزن روش</span>
+            </div>
+            <div class="palette-swatches" id="dailyPaletteSwatches"></div>
+          </div>
+          <div class="action-row">
+            <button type="button" class="btn-secondary" id="dailyPeekBtn">بقیه روزا چیه؟</button>
+            <button type="button" class="btn-ghost" id="dailyTodayBtn" style="display:none">برگرد به امروز</button>
+            <button type="button" class="btn-ghost" id="dailyCopyBtn">کپی</button>
+            <button type="button" class="btn-ghost" id="dailySaveBtn">نگه‌ش دار</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 02 — Personal Appreciation (28 Unique Compliments) -->
+      <section class="chapter" id="appreciation">
+        <div class="chapter-head">
+          <div class="chapter-meta">
+            <span class="chapter-num">۰۲</span>
+            <span>چند تا چیز که شاید خودت کمتر بهش فکر کنی</span>
+          </div>
+          <h2>چیزایی که واقعاً بهت میاد</h2>
+          <p class="chapter-desc">ورق بزن و ببین؛ همه‌ش چیزاییه که واقعاً توت دیده می‌شه، نه حرف تعارفی.</p>
+        </div>
+
+        <div class="filter-row" role="tablist" aria-label="فیلتر موضوع">
+          <button type="button" class="filter-chip active" data-facet="all" role="tab" aria-selected="true">همه‌ش (۲۸)</button>
+          <button type="button" class="filter-chip" data-facet="smile" role="tab" aria-selected="false">چشم و لبخندت</button>
+          <button type="button" class="filter-chip" data-facet="energy" role="tab" aria-selected="false">خنده و روحیه‌ت</button>
+          <button type="button" class="filter-chip" data-facet="soul" role="tab" aria-selected="false">اخلاق و مهربونیت</button>
+          <button type="button" class="filter-chip" data-facet="art" role="tab" aria-selected="false">هنر و سلیقه‌ت</button>
+        </div>
+
+        <div class="compliment-stage">
+          <div class="compliment-tag-row">
+            <span class="facet-badge" id="compFacetLabel">ویژگی</span>
+            <span id="compCounter">۱ از ۲۸</span>
+          </div>
+
+          <p class="compliment-text" id="compText" aria-live="polite"></p>
+
+          <div class="swipe-hint">
+            <button type="button" class="swipe-arrow-btn dir-right" id="compSwipeRight" aria-label="کارت بعدی">
+              <svg viewBox="0 0 38 18" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 11.5 C 13 6.2, 23 6.2, 33 9.2" />
+                <path d="M26.5 4.2 C 29.2 6.4, 31.2 7.8, 33.4 9.2 C 30.8 10.6, 28.6 12.2, 26.8 14.4" />
+              </svg>
+            </button>
+            <span>بکش و ورق بزن</span>
+            <button type="button" class="swipe-arrow-btn dir-left" id="compSwipeLeft" aria-label="کارت قبلی">
+              <svg viewBox="0 0 38 18" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M34 11.5 C 25 6.2, 15 6.2, 5 9.2" />
+                <path d="M11.5 4.2 C 8.8 6.4, 6.8 7.8, 4.6 9.2 C 7.2 10.6, 9.4 12.2, 11.2 14.4" />
+              </svg>
+            </button>
+          </div>
+          <div class="compliment-footer">
+            <div class="action-row">
+              <button type="button" class="btn-secondary" id="compPrevBtn">قبلی</button>
+              <button type="button" class="btn-primary" id="compNextBtn" style="min-height:44px;padding:0.55rem 1.35rem;font-size:0.88rem">بعدی</button>
+              <button type="button" class="btn-ghost" id="compRandBtn">یکی شانسی</button>
+            </div>
+            <div class="action-row">
+              <button type="button" class="btn-ghost" id="compCopyBtn">کپی</button>
+              <button type="button" class="btn-ghost" id="compSaveBtn">نگه‌ش دار</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03 — Unexpected Compliments Machine -->
+      <section class="chapter" id="machine">
+        <div class="chapter-head">
+          <div class="chapter-meta">
+            <span class="chapter-num">۰۳</span>
+            <span>تعریفِ یهویی</span>
+          </div>
+          <h2>بزن روش، ببین چی درمیاد</h2>
+          <p class="chapter-desc">هر بار این دکمه رو بزنی، یه یادداشتِ یهویی و بی‌مقدمه برات میاد بالا.</p>
+        </div>
+
+        <div class="machine-wrap">
+          <div class="machine-console">
+            <button type="button" class="stamp-btn" id="stampTriggerBtn">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6L12 2z" />
+              </svg>
+              <span>بزن ببینیم!</span>
+            </button>
+            <p style="font-size:0.82rem;color:var(--ink-muted)" id="machineCountText">هنوز نزدی روش</p>
+          </div>
+
+          <div class="ticket-paper" id="ticketPaper">
+            <div class="ticket-header">
+              <span id="ticketSerial">یادداشت #۰۰۱</span>
+              <span>واسه زهرا</span>
+            </div>
+            <p class="ticket-body" id="ticketText" aria-live="polite">
+              اون دکمه رو بزن تا اولین یادداشتِ یهویی بیاد بیرون.
+            </p>
+            <div class="action-row" id="ticketActions" style="display:none">
+              <button type="button" class="btn-ghost" id="ticketCopyBtn">کپی</button>
+              <button type="button" class="btn-ghost" id="ticketSaveBtn">نگه‌ش دار</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04 — A Little Reminder About Your Worth -->
+      <section class="chapter" id="worth">
+        <div class="chapter-head">
+          <div class="chapter-meta">
+            <span class="chapter-num">۰۴</span>
+            <span>چند تا یادآوریِ ساده</span>
+          </div>
+          <h2>یه وقت خودتو دست‌کم نگیری</h2>
+          <p class="chapter-desc">بعضی وقتا آدم وسط شلوغی و خستگی یادش می‌ره. روی هر کدوم خواستی بزن.</p>
+        </div>
+
+        <div class="worth-list" id="worthAccordion"></div>
+      </section>
+
+      <!-- 05 — When You Need Someone -->
+      <section class="chapter" id="listen">
+        <div class="chapter-head">
+          <div class="chapter-meta">
+            <span class="chapter-num">۰۵</span>
+            <span>جدی می‌گم این یکی رو</span>
+          </div>
+          <h2>هر وقت دلت خواست حرف بزنی...</h2>
+        </div>
+
+        <div class="safe-space-card">
+          <p class="safe-lead">
+            هر وقت حالت خوب نبود یا دلت خواست با یکی حرف بزنی، بدون یکی هست که بدون قضاوت به حرفات گوش بده و حرفات هم پیش خودش بمونه.
+          </p>
+          <p class="safe-promise">
+            «قرار نیست همیشه راه‌حلی داشته باشم؛ گاهی فقط می‌تونم گوش بدم و کنارت باشم.»
+          </p>
+
+          <div>
+            <p style="font-size:0.86rem;color:var(--ink-muted);margin-bottom:0.75rem;font-weight:600">
+              الان کدومش بیشتر به حالت نزدیکه؟
+            </p>
+            <div class="need-pills" id="needPills"></div>
+          </div>
+
+          <div class="need-response" id="needResponse" aria-live="polite"></div>
+          <div class="breath-wrap" id="breathWrap">
+            <button type="button" class="btn-secondary" id="breathToggleBtn" style="min-height:40px;font-size:0.84rem">
+              یک دقیقه نفس عمیق
+            </button>
+            <div class="breath-collapse" id="breathPanel" aria-hidden="true">
+              <div class="breath-collapse-inner">
+                <div class="breath-panel" aria-live="polite">
+                  <div class="breath-stage">
+                    <div class="breath-ring-outer" aria-hidden="true"></div>
+                    <div class="breath-circle" id="breathCircle">
+                      <span class="breath-count" id="breathCount">۳</span>
+                    </div>
+                  </div>
+                  <div class="breath-phase" id="breathPhase">آماده شو...</div>
+                  <div class="breath-meta" id="breathMeta">شونه‌هات رو شل کن، ۳ ثانیه دیگه شروع می‌کنیم</div>
+                  <button type="button" class="btn-ghost" id="breathStopBtn" style="min-height:36px">بسه، مرسی</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 06 — The Smile Generator (45 Unique Messages) -->
+      <section class="chapter" id="smile-gen">
+        <div class="chapter-head">
+          <div class="chapter-meta">
+            <span class="chapter-num">۰۶</span>
+            <span>۴۸ تا پیام بدون تکرار</span>
+          </div>
+          <h2>دکمه‌ی لبخند</h2>
+          <p class="chapter-desc">هر بار بزنی یه پیام دیگه میاد؛ تا همه‌شونو نبینی تکراری نمی‌شه.</p>
+        </div>
+
+        <div class="smile-box">
+          <p class="smile-counter" id="smileCounter">پیام ۱ از ۴۸</p>
+          <p class="smile-display" id="smileDisplay" aria-live="polite">
+            خانم زهرا، امروز باید حداقل یه بار با خیال راحت بخندی. لطفاً همکاری کن!
+          </p>
+          <div class="smile-actions">
+            <button type="button" class="btn-primary" id="smileGenBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+                <line x1="9" y1="9" x2="9.01" y2="9" />
+                <line x1="15" y1="9" x2="15.01" y2="9" />
+              </svg>
+              <span>یکی دیگه بیار</span>
+            </button>
+            <button type="button" class="btn-secondary" id="smileCopyBtn">کپی</button>
+            <button type="button" class="btn-ghost" id="smileSaveBtn">نگه‌ش دار</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 07 — Digital Happiness Collection (8 Mood Categories) -->
+      <section class="chapter" id="moods">
+        <div class="chapter-head">
+          <div class="chapter-meta">
+            <span class="chapter-num">۰۷</span>
+            <span>بسته به حال الانت</span>
+          </div>
+          <h2>الان دقیقاً چه حسی داری؟</h2>
+          <p class="chapter-desc">هر کدوم الان بهت نزدیک‌تره انتخاب کن؛ واسه هر حالت ۵ تا پیام گذاشتم.</p>
+        </div>
+
+        <div class="mood-grid" id="moodGrid" role="tablist" aria-label="انتخاب حال و هوا"></div>
+
+        <div class="mood-stage">
+          <div style="display:flex;justify-content:space-between;align-items:center;font-size:0.82rem;color:var(--ink-muted)">
+            <span id="moodActiveTitle" style="font-weight:700;color:var(--accent)"></span>
+            <span id="moodCounter">۱ از ۵</span>
+          </div>
+          <p class="mood-message" id="moodMessage" aria-live="polite"></p>
+          <div class="swipe-hint">
+            <button type="button" class="swipe-arrow-btn dir-right" id="moodSwipeRight" aria-label="کارت بعدی">
+              <svg viewBox="0 0 38 18" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 11.5 C 13 6.2, 23 6.2, 33 9.2" />
+                <path d="M26.5 4.2 C 29.2 6.4, 31.2 7.8, 33.4 9.2 C 30.8 10.6, 28.6 12.2, 26.8 14.4" />
+              </svg>
+            </button>
+            <span>بکش و ورق بزن</span>
+            <button type="button" class="swipe-arrow-btn dir-left" id="moodSwipeLeft" aria-label="کارت قبلی">
+              <svg viewBox="0 0 38 18" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M34 11.5 C 25 6.2, 15 6.2, 5 9.2" />
+                <path d="M11.5 4.2 C 8.8 6.4, 6.8 7.8, 4.6 9.2 C 7.2 10.6, 9.4 12.2, 11.2 14.4" />
+              </svg>
+            </button>
+          </div>
+          <div class="mood-nav">
+            <div class="action-row">
+              <button type="button" class="btn-secondary" id="moodPrevBtn">قبلی</button>
+              <button type="button" class="btn-secondary" id="moodNextBtn">بعدی</button>
+            </div>
+            <div class="action-row">
+              <button type="button" class="btn-ghost" id="moodCopyBtn">کپی</button>
+              <button type="button" class="btn-ghost" id="moodSaveBtn">نگه‌ش دار</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 08 — Mini-Game + Fine-Line Ink Sketchpad -->
+      <section class="chapter" id="play">
+        <div class="chapter-head">
+          <div class="chapter-meta">
+            <span class="chapter-num">۰۸</span>
+            <span>یه کم سرگرمی</span>
+          </div>
+          <h2>یه بازی کوچیک حافظه</h2>
+          <p class="chapter-desc">۶ تا جفت رو پیدا کن؛ هر جفت که جور بشه یه جمله کوچیک میاد و آخرش هم یه یادداشت باز می‌شه.</p>
+        </div>
+
+        <div class="editorial-box">
+          <div class="game-meta">
+            <div class="game-stats">
+              <span class="stat-pill">حرکت‌ها: <strong id="gameMoves">۰</strong></span>
+              <span class="stat-pill">جفت‌ها: <strong id="gamePairs">۰</strong> از ۶</span>
+              <span class="stat-pill">بهترینت: <strong id="gameBest">—</strong></span>
+            </div>
+            <button type="button" class="btn-secondary" id="gameResetBtn">از اول</button>
+          </div>
+
+          <div class="memory-grid" id="memoryGrid" aria-label="صفحه بازی حافظه"></div>
+
+          <div class="game-reward" id="gameReward" aria-live="polite">
+            <strong style="display:block;margin-bottom:0.35rem;font-size:1.05rem">ایول! همه‌شو پیدا کردی</strong>
+            جایزه‌ت این یادداشت کوچیکه: «راستی، ممنون که همیشه انقدر خوش‌برخورد و مهربونی. هم اینو بدون که خیلی آدم باارزشی هستی، هم اینکه هر وقت خواستی یه کم حواست پرت بشه، این بازی همین‌جاست!»
+          </div>
+
+          <!-- Minimal Fine-Line Tattoo-Inspired Sketchpad -->
+          <div class="sketch-wrap">
+            <div style="margin-bottom:0.85rem">
+              <h3 style="font-size:1.08rem;font-weight:700;margin-bottom:0.25rem">یه کاغذ کوچیک واسه خط‌خطی</h3>
+              <p style="font-size:0.86rem;color:var(--ink-soft)">گفتم چون رشته‌ت گرافیکه و دستت تو طراحیه، شاید بدت نیاد اینجا یه چیز ریز بکشی.</p>
+            </div>
+
+            <div class="sketch-toolbar">
+              <label class="color-picker-wrap" for="inkColorInput" title="انتخاب رنگ قلم">
+                <span>رنگ قلم</span>
+                <span class="color-picker-dot" id="inkColorDot" aria-hidden="true"></span>
+                <input type="color" class="color-picker-input" id="inkColorInput" value="#1D1B18" aria-label="انتخاب رنگ قلم از چرخه رنگ" />
+              </label>
+              <div class="action-row">
+                <button type="button" class="btn-ghost" id="undoCanvasBtn" disabled>برگشت</button>
+                <button type="button" class="btn-ghost" id="stampHeartBtn">+ ♡</button>
+                <button type="button" class="btn-ghost" id="clearCanvasBtn">پاک کن</button>
+                <button type="button" class="btn-secondary" id="downloadSketchBtn" style="min-height:38px;font-size:0.8rem">ذخیره عکسش</button>
+              </div>
+            </div>
+
+            <div class="sketch-tools-row" role="group" aria-label="ابزارهای طراحی">
+              <button type="button" class="tool-pill brush-size-btn active" data-size="1.8" aria-pressed="true">
+                <span class="nib-dot" style="width:4px;height:4px"></span>
+                <span>نازک</span>
+              </button>
+              <button type="button" class="tool-pill brush-size-btn" data-size="3.8" aria-pressed="false">
+                <span class="nib-dot" style="width:7px;height:7px"></span>
+                <span>متوسط</span>
+              </button>
+              <button type="button" class="tool-pill brush-size-btn" data-size="7.5" aria-pressed="false">
+                <span class="nib-dot" style="width:10px;height:10px"></span>
+                <span>ضخیم</span>
+              </button>
+              <button type="button" class="tool-pill" id="eraserToggleBtn" aria-pressed="false">پاک‌کن</button>
+              <button type="button" class="tool-pill" id="dotGridToggleBtn" aria-pressed="false">نقطه‌چین</button>
+              <span class="paper-sep" aria-hidden="true"></span>
+              <button type="button" class="tool-pill paper-btn active" data-paper="#FAF6F0" data-dark="false" aria-pressed="true">کاغذ کرم</button>
+              <button type="button" class="tool-pill paper-btn" data-paper="#FFFFFF" data-dark="false" aria-pressed="false">کاغذ سفید</button>
+              <button type="button" class="tool-pill paper-btn" data-paper="#181614" data-dark="true" aria-pressed="false">کاغذ مشکی</button>
+            </div>
+
+            <div class="sketch-canvas-box">
+              <canvas id="inkCanvas"></canvas>
+              <span class="sketch-hint">با انگشت یا موس بکش</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="ink-divider" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3">
+          <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" />
+        </svg>
+      </div>
+
+      <!-- 09 — Closing Experience -->
+      <section class="chapter" id="closing">
+        <div class="closing-card">
+          <div class="eyebrow" style="margin-bottom:1rem">
+            <span>حرف آخر</span>
+          </div>
+          <h2 style="font-size:clamp(1.4rem,3.8vw,2rem);font-weight:800;margin-bottom:1.35rem">
+            مراقب خودت باش، زهرا
+          </h2>
+          <div class="closing-body">
+            <p>
+              می‌دونم بعضی روزا واقعاً سخت می‌گذرن و آدم حوصله هیچ‌چی رو نداره.
+              ولی خواستم یه جا باشه که هر وقت این حس سراغت اومد، یادت بیاد چقدر آدم خوب و باارزشی هستی و نباید خودتو به خاطر حرف یا رفتار بقیه اذیت کنی.
+            </p>
+            <p>
+              واقعاً امیدوارم روزای خیلی خوبی در انتظارت باشه؛
+              از اون روزایی که آخر شب با خیال راحت نفس بکشی و بگی امروز چقدر خوب گذشت.
+              مرسی بابت اینکه خودت هم همیشه انقدر با معرفت و مهربون بودی و گفتی می‌شه روت حساب کرد.
+            </p>
+            <p>
+              خلاصه که حواست به خودت و اون خنده‌های قشنگت باشه، باشه؟
+              هر وقت هم خواستی حرف بزنی، من هستم.
+            </p>
+          </div>
+
+          <div class="closing-signature">
+            از طرف کسی که براش مهمی،<br />
+            امین
+          </div>
+
+          <div style="margin-top:1.75rem;display:flex;justify-content:center;gap:0.75rem;flex-wrap:wrap">
+            <a href="#top" class="btn-secondary">برگرد بالا</a>
+          </div>
+
+          <!-- Discoverable Hidden Surprise Trigger -->
+          <div>
+            <button type="button" class="secret-star-btn" id="secretVaultBtn" aria-label="ستاره پنهان" title="این چیه؟">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M12 2l2.2 6.8L21 11l-6.8 2.2L12 20l-2.2-6.8L3 11l6.8-2.2L12 2z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Pocket & Achievements Modal -->
+  <div class="modal-backdrop" id="pocketModal" role="dialog" aria-modal="true" aria-labelledby="pocketTitle">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3 id="pocketTitle">پیام‌های ذخیره شده</h3>
+        <button type="button" class="icon-btn" id="closePocketBtn" aria-label="بستن">✕</button>
+      </div>
+
+      <h4 style="font-size:0.9rem;color:var(--ink-muted);margin-bottom:0.65rem">چیزایی که اینجا باز کردی</h4>
+      <div class="badge-grid" id="achievementsGrid"></div>
+
+      <h4 style="font-size:0.9rem;color:var(--ink-muted);margin-bottom:0.65rem">پیامایی که نگه داشتی</h4>
+      <div class="saved-list" id="savedList"></div>
+
+      <div style="display:flex;justify-content:space-between;align-items:center;padding-top:1rem;border-top:1px solid var(--border);gap:0.5rem;flex-wrap:wrap">
+        <button type="button" class="btn-ghost" id="resetProgressBtn" style="color:var(--accent)">پاک کردن همه‌چی</button>
+        <button type="button" class="btn-secondary" id="closePocketBtn2">بستن</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hidden Surprise Vault Modal -->
+  <div class="modal-backdrop" id="secretModal" role="dialog" aria-modal="true" aria-labelledby="secretTitle">
+    <div class="modal-card">
+      <div class="modal-head">
+        <h3 id="secretTitle">پیداش کردی!</h3>
+        <button type="button" class="icon-btn" id="closeSecretBtn" aria-label="بستن">✕</button>
+      </div>
+      <p style="font-size:0.9rem;color:var(--ink-soft);margin-bottom:1.15rem">
+        این چند تا یادداشت رو قایم کرده بودم اینجا، گفتم شاید یه روز کنجکاو بشی پیداشون کنی:
+      </p>
+      <div class="secret-notes-list">
+        <div class="secret-note">۱. اگه یه روز کسی قدر مهربونیت رو ندونست، مشکل از تو نیست. تو همون‌جوری که هستی خیلی خوبی.</div>
+        <div class="secret-note">۲. جدی می‌گم، این ترکیبِ هم خوشگل بودن، هم بااخلاق بودن، هم خوش‌خنده بودن خیلی کم پیدا می‌شه!</div>
+        <div class="secret-note">۳. هر وقت وسط درس و پروژه‌های گرافیک خسته شدی، یکم استراحت کن و به خودت عذاب وجدان نده.</div>
+        <div class="secret-note">۴. ممنون که خودت هم همیشه انقدر رفیقِ خوبی بودی و حسِ خوبی به آدم می‌دی. واقعاً ارزشمنده برام.</div>
+        <div class="secret-note">۵. لازم نیست همیشه قوی باشی یا همه‌چی رو تو خودت بریزی. هر وقت حالت گرفت، می‌دونی که می‌تونی پیام بدی.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    (function () {
+      'use strict';
+
+      /* ================= HELPERS ================= */
+      const faDigits = ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'];
+      function toFa(num) {
+        return String(num).replace(/\d/g, d => faDigits[Number(d)]);
+      }
+
+      function safeGetStorage(key, fallback) {
+        try {
+          const raw = localStorage.getItem(key);
+          return raw ? JSON.parse(raw) : fallback;
+        } catch (e) {
+          return fallback;
+        }
+      }
+
+      function safeSetStorage(key, value) {
+        try {
+          localStorage.setItem(key, JSON.stringify(value));
+        } catch (e) { /* ignore storage errors */ }
+      }
+
+      let toastTimer = null;
+      function showToast(msg) {
+        const el = document.getElementById('toast');
+        if (!el) return;
+        el.textContent = msg;
+        el.classList.add('show');
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => el.classList.remove('show'), 2600);
+      }
+
+      function copyText(text) {
+        if (!text) return;
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(() => {
+            showToast('کپی شد.');
+          }).catch(() => fallbackCopy(text));
+        } else {
+          fallbackCopy(text);
+        }
+      }
+
+      function fallbackCopy(text) {
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        try {
+          document.execCommand('copy');
+          showToast('کپی شد.');
+        } catch (e) {
+          showToast('نشد کپی بشه.');
+        }
+        document.body.removeChild(ta);
+      }
+
+      /* ================= SMOOTH DIRECTIONAL SWAP ANIMATION ================= */
+      const swapTimers = new WeakMap();
+      function animateTextSwap(el, direction, applyFn) {
+        if (!el) {
+          applyFn();
+          return;
+        }
+        const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (appState.reducedMotion || prefersReduced) {
+          applyFn();
+          return;
+        }
+        const prevTimer = swapTimers.get(el);
+        if (prevTimer) clearTimeout(prevTimer);
+
+        const outX = direction === 'prev' ? -24 : (direction === 'fade' ? 0 : 24);
+        const inX = direction === 'prev' ? 20 : (direction === 'fade' ? 0 : -20);
+        const outY = direction === 'fade' ? 6 : 0;
+        const inY = direction === 'fade' ? -6 : 0;
+
+        el.style.transition = 'opacity 0.16s cubic-bezier(0.22, 1, 0.36, 1), transform 0.16s cubic-bezier(0.22, 1, 0.36, 1)';
+        el.style.opacity = '0';
+        el.style.transform = `translate3d(${outX}px, ${outY}px, 0)`;
+
+        const t = setTimeout(() => {
+          applyFn();
+          el.style.transition = 'none';
+          el.style.opacity = '0';
+          el.style.transform = `translate3d(${inX}px, ${inY}px, 0)`;
+          void el.offsetWidth;
+          el.style.transition = 'opacity 0.28s cubic-bezier(0.22, 1, 0.36, 1), transform 0.28s cubic-bezier(0.22, 1, 0.36, 1)';
+          el.style.opacity = '1';
+          el.style.transform = 'translate3d(0, 0, 0)';
+        }, 165);
+        swapTimers.set(el, t);
+      }
+
+      /* ================= SUBTLE WEB AUDIO (OFF BY DEFAULT) ================= */
+      let soundEnabled = false;
+      let audioCtx = null;
+
+      function playChime(freq = 523.25, duration = 0.14) {
+        if (!soundEnabled) return;
+        try {
+          const AC = window.AudioContext || window.webkitAudioContext;
+          if (!AC) return;
+          if (!audioCtx) audioCtx = new AC();
+          if (audioCtx.state === 'suspended') audioCtx.resume();
+          const osc = audioCtx.createOscillator();
+          const gain = audioCtx.createGain();
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
+          gain.gain.setValueAtTime(0.055, audioCtx.currentTime);
+          gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + duration);
+          osc.connect(gain);
+          gain.connect(audioCtx.destination);
+          osc.start();
+          osc.stop(audioCtx.currentTime + duration);
+        } catch (e) { /* ignore */ }
+      }
+
+      /* ================= PERSISTENT STATE ================= */
+      const defaultState = {
+        theme: 'light',
+        reducedMotion: false,
+        savedMessages: [],
+        achievements: {
+          started: false,
+          smiles5: false,
+          machineUsed: false,
+          gameWon: false,
+          secretFound: false
+        },
+        smilesSeenCount: 0,
+        machineCount: 0,
+        bestMoves: null
+      };
+
+      let appState = Object.assign({}, defaultState, safeGetStorage('zahra_space_v1', {}));
+      appState.achievements = Object.assign({}, defaultState.achievements, appState.achievements || {});
+      if (!Array.isArray(appState.savedMessages)) appState.savedMessages = [];
+
+      function persist() {
+        safeSetStorage('zahra_space_v1', appState);
+        updatePocketBadge();
+      }
+
+      function unlockAchievement(key, label) {
+        if (!appState.achievements[key]) {
+          appState.achievements[key] = true;
+          persist();
+          playChime(659.25, 0.22);
+          showToast('باز شد: ' + label);
+        }
+      }
+
+      function toggleSaveMessage(text) {
+        const idx = appState.savedMessages.indexOf(text);
+        if (idx === -1) {
+          appState.savedMessages.unshift(text);
+          showToast('ذخیره شد.');
+          playChime(587.33, 0.14);
+        } else {
+          appState.savedMessages.splice(idx, 1);
+          showToast('از ذخیره‌ها برداشته شد.');
+        }
+        persist();
+        syncSaveButtons();
+      }
+
+      function isSaved(text) {
+        return appState.savedMessages.includes(text);
+      }
+
+      function updatePocketBadge() {
+        const countEl = document.getElementById('pocketCount');
+        if (countEl) countEl.textContent = toFa(appState.savedMessages.length);
+      }
+
+      /* ================= DATA COLLECTIONS ================= */
+
+      // 31 Daily Messages — Natural, warm, conversational Telegram tone
+      const dailyMessages = [
+        'امیدوارم امروز یه دلیل کوچیک واسه خندیدن پیدا کنی، زهرا.',
+        'فقط خواستم امروز یه بار دیگه یادت بندازم که چقدر آدم خوب و باارزشی هستی.',
+        'اگه امروز کارا اون‌جوری که می‌خواستی پیش نرفت، فدای سرت. فردا یه روز جدیده.',
+        'آخه چرا بعضی وقتا این‌قدر به خودت سخت می‌گیری؟ یکم هم به خودت استراحت بده.',
+        'زهرا، واقعاً برام مهمه که حالت خوب باشه. امروز حواست به خودت باشه و الکی خودتو خسته نکن، باشه؟',
+        'امیدوارم امروزت آروم بگذره و اعصابت واسه هیچ‌چی خرد نشه.',
+        'یه چیزی رو هیچ‌وقت عوض نکن؛ اون خنده قشنگت رو. واقعاً بهت میاد همیشه بخندی.',
+        'اگه امروز کسی بی‌حوصله بود یا حرفی زد که خوشت نیومد، به دل نگیر. ربطی به تو نداره، تو خیلی دختر خوب و ماهی هستی.',
+        'راستی، خواستم بگم خیلی خوبه که هستی. همین.',
+        'بعضی روزا فقط قراره بگذرن، لازم نیست هر روز کلی کار بزرگ انجام بدی.',
+        'امیدوارم امروز یکی از اون روزایی باشه که آخر شب بگی آخیش، چقدر خوب گذشت.',
+        'چشمات و لبخندت وقتی واقعاً خوشحالی خیلی قشنگن؛ امیدوارم امروز کلی بخندی.',
+        'اگه سرت شلوغه، یادت نره وسطش یه پنج دقیقه هم فقط نفس بکشی و به هیچی فکر نکنی.',
+        'مرسی که همیشه انقدر با معرفت و مهربونی، زهرا.',
+        'امروز به خودت گیر نده. همین‌جوری که هستی خیلی هم خوبی.',
+        'اگه امروز حالت زیاد خوب نیست، مجبور نیستی تظاهر کنی همه‌چی اوکیه. می‌تونی حرف بزنی.',
+        'امیدوارم امروز یه خبر خوب کوچیک یا یه اتفاق قشنگ غافلگیرت کنه.',
+        'راستی، امیدوارم تو هنر و گرافیک روزبه‌روز پیشرفت کنی و به هر جایی که دوست داری برسی. واقعاً استعداد و سلیقه‌ش رو داری.',
+        'اگه امروز حوصله هیچ‌کس رو نداری، کاملاً حقته. گوشی رو بذار کنار و راحت باش.',
+        'یادت باشه هر وقت دلت گرفت، لازم نیست تنهایی تو خودت بریزی. من هستم اگه خواستی.',
+        'بعضی وقتا آدم فقط نیاز داره یکی بهش بگه بهت افتخار می‌کنم که داری ادامه می‌دی. پس بهت افتخار می‌کنم؛ قوی باش و ادامه بده.',
+        'امروز قرار نیست همه ازت راضی باشن؛ مهم اینه خودت حالت خوب باشه.',
+        'انرژی خوب و شیطنتت واقعاً حالِ آدم رو بهتر می‌کنه. مراقبش باش.',
+        'یه یادآوری ساده واسه امروز: تو خیلی قشنگ‌تر و ارزشمندتر از اون چیزی هستی که وقتای خستگی فکر می‌کنی.',
+        'اگه الان خسته‌ای، کارا فرار نمی‌کنن. یه کم استراحت کن بعدش برو سراغشون.',
+        'امیدوارم امروز هر جا هستی، دلت آروم باشه و لبت خندون.',
+        'تو حق داری آدمایی دورت باشن که واقعا بهت احترام بذارن و قدرتو بدونن.',
+        'امروز سعی کن یه ذره همون‌قدر که با دوستات مهربونی، با خودت هم مهربون باشی.',
+        'راستی، چطوری امروز؟ امیدوارم سرحال باشی و هیچی رو اعصابت نرفته باشه.',
+        'مراقب خودت باش زهرا، امیدوارم امروز یکی از روزای خوب و آرومت باشه.',
+        'امروز بیشتر بخند تا دنیا قشنگ‌تر بشه، زهرا. واقعاً بهت میاد همیشه بخندی.'
+      ];
+
+      // 28 Genuine, Natural Compliments about Zahra
+      const compliments = [
+        { facet: 'smile', label: 'چشم و لبخندت', text: 'لبخندت واقعاً قشنگه؛ از اون لبخنداست که آدم ناخودآگاه وقتی می‌بینتش حالش خوب می‌شه.' },
+        { facet: 'smile', label: 'چشم و لبخندت', text: 'چشمای خیلی قشنگی داری، زهرا. جدی می‌گم، اصلاً تعارف نیست.' },
+        { facet: 'energy', label: 'خنده و روحیه‌ت', text: 'اینکه انقدر راحت می‌خندی و به بقیه انرژی می‌دی، واقعاً از اون ویژگی‌های قشنگته. امیدوارم هیچ‌وقت ازت گرفته نشه.' },
+        { facet: 'art', label: 'هنر و سلیقه‌ت', text: 'اینکه رشته گرافیک می‌خونی خیلی بهت میاد؛ هم دید هنری قشنگی داری، هم سلیقه‌ت واقعاً خوبه.' },
+        { facet: 'soul', label: 'اخلاق و مهربونیت', text: 'مهربونیت واقعی و بی‌ادعاست. آدم قشنگ حس می‌کنه که از ته دلته.' },
+        { facet: 'smile', label: 'چشم و لبخندت', text: 'هم خوشگلی، هم اخلاق خوبی داری، هم اون خنده‌های قشنگت رو داری؛ دیگه از یه آدم چی می‌خوایم؟!' },
+        { facet: 'energy', label: 'خنده و روحیه‌ت', text: 'راستی، این شیطنت و خنده‌هات رو حفظ کن! آدمای پرانرژی و خوش‌خنده مثل تو واقعاً حال جمع رو بهتر می‌کنن.' },
+        { facet: 'soul', label: 'اخلاق و مهربونیت', text: 'خوبیت اینه که هم می‌شه باهات کلی شوخی کرد و خندید، هم می‌شه جدی حرف زد و روی معرفتت حساب کرد.' },
+        { facet: 'art', label: 'هنر و سلیقه‌ت', text: 'خیلی دختر خوب و باذوقی هستی؛ تو کارای هنریت قشنگ معلومه که چقدر حوصله و دقت می‌ذاری.' },
+        { facet: 'energy', label: 'خنده و روحیه‌ت', text: 'وقتی تو جمعی، فضا اصلاً خشک نمی‌مونه. یه جوری راحت و صمیمی می‌شه همه چی.' },
+        { facet: 'smile', label: 'چشم و لبخندت', text: 'وقتی از ته دل می‌خندی، چشمات هم باهات می‌خندن. قشنگ‌ترین حالتت همینه.' },
+        { facet: 'soul', label: 'اخلاق و مهربونیت', text: 'آدم کنار تو معذب نمی‌شه؛ راحت می‌تونه خودش باشه و حرف بزنه.' },
+        { facet: 'art', label: 'هنر و سلیقه‌ت', text: 'باسلیقه‌ای، و اینو هم تو نگاه هنریت می‌شه دید هم تو خودت.' },
+        { facet: 'energy', label: 'خنده و روحیه‌ت', text: 'با اینکه گاهی خودت هم خسته‌ای، باز یه انرژی خوب و سرزنده‌ای داری که خیلی قشنگه.' },
+        { facet: 'soul', label: 'اخلاق و مهربونیت', text: 'با همه چیزایی که از سر گذروندی، هنوز قلبت رو مهربون نگه داشتی. این واقعاً کار هر کسی نیست.' },
+        { facet: 'smile', label: 'چشم و لبخندت', text: 'چشمای قشنگ و خنده‌های قشنگت رو دست‌کم نگیر! بعضی وقتا واقعاً خودت یادت می‌ره چقدر زیبایی، چقدر قشنگی، چقدر خوشگلی، چقدر ماهی، چقدر یکی از فرشته‌های خدایی.' },
+        { facet: 'art', label: 'هنر و سلیقه‌ت', text: 'اینکه دنبال هنر و علاقه‌ت رفتی و به خودت متکی هستی، واقعاً قابل احترامه.' },
+        { facet: 'energy', label: 'خنده و روحیه‌ت', text: 'صدای خنده‌ت واقعاً دل‌نشینه؛ امیدوارم همیشه دلیل واسه خندیدن داشته باشی.' },
+        { facet: 'soul', label: 'اخلاق و مهربونیت', text: 'ممنون که خودت هم همیشه انقدر با معرفتی و هوای دوستاتو داری. واقعاً کم پیدا می‌شه آدمی مثل تو.' },
+        { facet: 'smile', label: 'چشم و لبخندت', text: 'زیباییت خیلی طبیعیه؛ اصلاً نیازی به هیچ زحمت اضافه‌ای نداری.' },
+        { facet: 'art', label: 'هنر و سلیقه‌ت', text: 'ظرافت و دقتی که تو طراحی و گرافیک داری خیلی قشنگه؛ مطمئنم تو این مسیر کلی موفق می‌شی.' },
+        { facet: 'soul', label: 'اخلاق و مهربونیت', text: 'مدلِ برخورد و مهربونیت یه جوریه که آدم همون اول می‌فهمه با چه دخترِ درست‌حسابی و بااخلاقی طرفه؛ جدی از هر نظر واقعاً ماهی، زهرا.' },
+        { facet: 'energy', label: 'خنده و روحیه‌ت', text: 'شوخ‌طبعی و سرزندگیت از اون چیزاییه که روزای معمولی دانشگاه رو خیلی بهتر می‌کنه.' },
+        { facet: 'smile', label: 'چشم و لبخندت', text: 'کاش هر وقت خودتو دست‌کم می‌گیری، می‌تونستی یه لحظه از نگاه بقیه ببینی چقدر خوب و قشنگی.' },
+        { facet: 'soul', label: 'اخلاق و مهربونیت', text: 'آدم بعد از حرف زدن با تو، یه حس خوب و آروم داره. این خیلی مهمه.' },
+        { facet: 'art', label: 'هنر و سلیقه‌ت', text: 'هم دختر خیلی خوب و مهربونی هستی، هم ذهن خلاقی داری؛ این ترکیب واقعاً بهت میاد.' },
+        { facet: 'energy', label: 'خنده و روحیه‌ت', text: 'حضورت واقعاً حس خوبی به جمع می‌ده؛ نبودنت قشنگ حس می‌شه.' },
+        { facet: 'soul', label: 'اخلاق و مهربونیت', text: 'خلاصه‌ش؟ خیلی خوش‌شانسم که همچین هم‌کلاسی و دوست خوبی دارم.' }
+      ];
+
+      // 20 Unexpected Compliments Machine Notes (Zero marketing/slogan clichés!)
+      const machineTickets = [
+        'شاید امروز کسی بهت نگفته باشه، واسه همین بذار من بگم: مرسی که هستی زهرا. امیدوارم همیشه حالت خوب باشه.',
+        'راستی، چشمای خیلی قشنگی داری. گفتم یهویی یادت بندازم!',
+        'یه چیزی رو هیچ‌وقت عوض نکن؛ اون خنده‌های از ته دلت رو.',
+        'جدی می‌گم، هم خوش‌اخلاقی هم خوشگل هم باحال. خیلی خوبه که دوستِ منی.',
+        'اگه امروز حس کردی حوصله نداری، اشکالی نداره؛ ولی بدون هنوزم خیلی آدم باارزشی هستی.',
+        'خیلی دختر خوب و بااستعدادی هستی زهرا؛ تو گرافیک و هنر واقعاً آینده‌ی خوبی داری.',
+        'یه لبخند بزن ببینم... آها، همین! خیلی بهت میاد.',
+        'بعضی آدما همین که هستن حال آدم خوب می‌شه؛ تو دقیقاً از اونایی.',
+        'لطفاً خودتو این‌قدر دست‌کم نگیر، خانم! خیلی بیشتر از اونی که فکر می‌کنی خوبی.',
+        'امیدوارم همین امروز یه اتفاق کوچیک بیفته که حسابی بخندی.',
+        'معرفت و مهربونیت واقعاً کم‌نظیره، زهرا. مرسی بابتش.',
+        'حتی وقتی سرت شلوغه و خسته‌ای، باز هم خیلی دوست‌داشتنی و محترمی.',
+        'یه یادآوری یهویی: قرار نیست همه چی رو به دوش بکشی. یه کم به خودت آسون بگیر.',
+        'این انرژی خوب و شیطنتت رو همیشه نگه دار، خیلی بهت میاد.',
+        'امیدوارم تو هنر و طراحی به هر جا که دلت می‌خواد برسی؛ استعدادش رو قشنگ داری.',
+        'راستی، مراقب خودت هستی دیگه؟ یادت نره استراحت کنی.',
+        'تو از اون آدمایی هستی که آدم واقعاً خوشحال می‌شه تو زندگیش دارتت.',
+        'اگه امروز کسی رو اعصابت رفت، بی‌خیالش شو؛ ارزشش رو نداره حالتو خراب کنی.',
+        'فقط خواستم بی‌دلیل بگم: خیلی آدمِ خوبی هستی، زهرا.',
+        'قول بده امروز حداقل یه کار کوچیک واسه خوشحالی خودت بکنی!',
+        'یه قانون نانوشته هست که می‌گه اگه زهرا تو یه جمعی باشه، اون جمع حداقل دو برابر باحال‌تره.',
+        'یه چیز جالب: آدمایی که خودشون انقدر مهربونن، معمولاً آخرین نفرن که متوجه می‌شن چقدر دوست‌داشتنی‌ان.',
+        'تو بهترینی زهرا — اینو هیچ‌وقت یادت نره.'
+      ];
+
+      // 7 Self-Worth Reflections — Conversational, sincere, zero therapy-speak
+      const worthItems = [
+        {
+          title: 'قرار نیست همه ازت خوششون بیاد',
+          body: 'زهرا، قرار نیست همه ازت خوششون بیاد یا همه‌چی رو اون‌جوری که تو می‌بینی بفهمن. مهم اینه که خودت بدونی چقدر ارزشمندی و خودتو به خاطر نظر بقیه اذیت نکنی.'
+        },
+        {
+          title: 'رفتار بقیه ربطی به ارزش تو نداره',
+          body: 'اگه یه روز کسی بی‌معرفتی کرد، بی‌تفاوت بود یا قدر خوبیت رو ندونست، اون مشکل از خودش و شخصیت خودشه، نه اینکه تو چیزی کم داشته باشی.'
+        },
+        {
+          title: 'تو حقته با احترام باهات رفتار بشه',
+          body: 'احترام و مهربونی چیز عجیبی نیست که مجبور باشی واسه‌ش خودتو خسته کنی یا کوتاه بیای. هر کسی که می‌خواد کنارت باشه، باید قدرتو بدونه.'
+        },
+        {
+          title: 'با خودت این‌قدر سخت نگیر',
+          body: 'وقتی یکی از دوستات حالش بده یا اشتباهی می‌کنه، کلی باهاش مهربونی و دلداریش می‌دی. چرا وقتی نوبت خودت می‌شه این‌قدر به خودت گیر می‌دی؟ با خودت هم همون‌قدر رفیق باش.'
+        },
+        {
+          title: 'لازم نیست بابت حسات عذرخواهی کنی',
+          body: 'اگه یه روز ناراحتی، عصبانی هستی یا دلت گرفته، کاملاً طبیعیه. مجبور نیستی همه‌ش بخندی که بقیه راحت باشن. هر حسی داری، حقته که داشته باشیش.'
+        },
+        {
+          title: 'آدمایی رو کنار خودت نگه دار که واقعاً می‌بیننت',
+          body: 'تو لیاقتت اینه که دور و برت آدمایی باشن که هم تو روزای خوب باهات بخندن، هم تو روزای سخت بدون قضاوت و منت کنارت بمونن.'
+        },
+        {
+          title: 'هیچ‌کس بی‌نقص نیست، تو هم لازم نیست باشی',
+          body: 'قرار نیست همه‌چیت کامل و بی‌اشتباه باشه تا ارزشمند باشی. همون‌جوری که هستی، با همه حسات و روزای خوب و بدت، خیلی آدم دوست‌داشتنی و خوبی هستی.'
+        }
+      ];
+
+      // When You Need Someone (Interactive Reassurance Pills)
+      const needOptions = [
+        {
+          label: 'فقط می‌خوام یکی گوش بده',
+          text: 'هیچ اشکالی نداره اگه حرفات مرتب نیست یا نمی‌دونی از کجا شروع کنی. هر وقت خواستی پیام بده؛ بدون قضاوت گوش می‌دم و حرفاتم دقیقاً پیش خودم می‌مونه.'
+        },
+        {
+          label: 'امروز روز سنگینی بود',
+          text: 'حق داری خسته باشی. لازم نیست الان قوی‌بازی دربیاری یا بگی مهم نیست. بعضی روزا واقعاً سنگینن و همین که ازشون رد شدی کافیه.'
+        },
+        {
+          label: 'حوصله توضیح دادن ندارم',
+          text: 'اصلاً مجبور نیستی همه‌چی رو توضیح بدی. گاهی همین که بگی «امروز حالم زیاد خوب نیست» کافیه. من که اصراری نمی‌کنم؛ هر وقت خودت راحت بودی حرف بزن.'
+        },
+        {
+          label: 'خسته شدم از قوی بودن',
+          text: 'آخه کی گفته باید هر ثانیه قوی باشی؟ بعضی وقتا آدم فقط می‌خواد خالی کنه و یه کم غر بزنه. کاملاً طبیعیه و اصلاً نشونه ضعف نیست.'
+        },
+        {
+          label: 'نمی‌خوام مزاحمت بشم',
+          text: 'این حرفو دیگه نزن! حرف زدن با دوستت هیچ‌وقت مزاحمت نیست. خودت هم همیشه گفتی می‌شه روت حساب کرد، خب دوستی دوطرفه‌ست دیگه.'
+        }
+      ];
+
+      // 45 Unique Smile Generator Messages — Varied, natural, playful & sincere
+      const smileMessages = [
+        'خانم زهرا، گزارش شده که امروز باید حداقل یه بار با خیال راحت بخندی. لطفاً همکاری کن!',
+        'فقط خواستم یه بار دیگه بهت بگم که چقدر آدم ارزشمند و خوبی هستی.',
+        'امروز هم حق داری خوشحال باشی، حتی اگه هیچ دلیل خاصی نداشته باشه.',
+        'لطفاً با اون خنده قشنگت یه کم به این روزِ معمولی جون بده!',
+        'آخه چرا اخم؟ به این صورت فقط لبخند میاد.',
+        'یادت نره: روزای سخت می‌گذرن، ولی تو و روحیه خوبت می‌مونین.',
+        'یه لحظه شونه‌هاتو بنداز پایین، یه نفس عمیق بکش. الان بهتر شد، نه؟',
+        'چشمای قشنگت حیفه که همه‌ش درگیر فکر و خیال باشه.',
+        'امروز به خودت یه چیز خوشمزه بده؛ واقعاً حقته.',
+        'خیلی خوبه که هستی زهرا. جدی می‌گم.',
+        'هر وقت فکر کردی از پسش برنمیای، یادت بیار قبلاً از سخت‌تر از ایناش هم رد شدی.',
+        'یه لبخند کوچیک بزن... آها، همینو می‌گفتم!',
+        'واقعاً امیدوارم کلی اتفاق خوب و خنده‌دار تو راه باشه برات.',
+        'اگه امروز کارا کند پیش می‌ره، سخت نگیر. همیشه که نباید روی دورِ تند بود.',
+        'خنده‌های تو واقعاً حالِ جمع رو عوض می‌کنه.',
+        'قرار نیست به کسی لبخند بدهکار باشی، ولی به خودت یه عالمه حال خوب بدهکاری.',
+        'مراقب خودت باش، باشه؟',
+        'امروز اگه یه نفر بی‌دلیل بداخلاقی کرد، تو بی‌خیالش شو و روزِ خودتو خراب نکن.',
+        'هنرمند! امروز یه کم به مغز و دستات استراحت بده.',
+        'اگه الان حوصله‌ت سر رفته، بدون یکی هست که واقعاً دوست داره الان لبخند بزنی.',
+        'خودتو با هیچ‌کس مقایسه نکن؛ تو همین‌جوری که هستی خیلی خوبی.',
+        'یه کم آهنگ خوب بذار، یه کم استراحت کن و به هیچی فکر نکن.',
+        'هم خوش‌اخلاقی، هم باحال، هم مهربون. دیگه چی می‌خوای؟',
+        'اگه امروز فقط نصفِ همیشه انرژی داری، همون نصفش هم کاملاً کافیه.',
+        'بعضی وقتا بهترین کار اینه که گوشی رو بذاری کنار و فقط یه کم بخوابی.',
+        'مرسی که خودت هم همیشه انقدر با معرفتی و هوای بقیه رو داری.',
+        'فکرای الکی رو بذار رو سایلنت! امشب نوبتِ استراحته.',
+        'امیدوارم امروز یه چیزی پیش بیاد که یهو از ته دل بخندی.',
+        'زیبایی و قشنگیت رو یه وقت یادت نره، خانم!',
+        'بابت همه وقتایی که با انرژی خوبت حال بقیه رو بهتر کردی، مرسی.',
+        'همین الانشم کافی هستی؛ لازم نیست چیزی رو به کسی ثابت کنی.',
+        'اگه امروز اصلاً حسِ کار کردن نداری، خب نکن! دنیا به هم نمی‌ریزه.',
+        'هر وقت دلت گرفت، یادت باشه یکی هست که حرفاتو گوش بده.',
+        'خنده‌ت اصلاً تکراری نمی‌شه؛ هر بارش قشنگه.',
+        'امروز با خودت مهربون‌تر باش. خیلی بیشتر از بقیه به خودت سخت می‌گیری.',
+        'امیدوارم امشب با خیال راحت و لبخند بخوابی.',
+        'اگه همه کارا امروز تموم نشد، فردا هم هست. خودتو اذیت نکن.',
+        'بودنت کنار دوستات واقعاً فرق می‌ذاره، حتی اگه خودت متوجه‌ش نشی.',
+        'امروز بی‌دلیل به خودت بگو دمت گرم!',
+        'خوشحالی خیلی بهت میاد، زهرا.',
+        'هیچ حالِ بدی همیشگی نیست؛ اینم می‌گذره.',
+        'خلاصه که حواست به خودت باشه، خانم!',
+        'یه لیوان آب بخور، یه کم از صفحه گوشی فاصله بگیر و نفستو تازه کن.',
+        'یادت باشه تو خیلی قوی‌تر از اون چیزی هستی که وقتای خستگی حس می‌کنی.',
+        'اگه الان داری با خودت کلنجار می‌ری که کارت خوب شده یا نه: احتمال ۹۹ درصد از اونی که تو سرت فکر می‌کنی خیلی بهتره!',
+        'راستی، یادت باشه لازم نیست همیشه جوابِ همه رو سریع بدی یا هوای همه رو داشته باشی؛ یه وقتایی هم نوبتِ خودته.',
+        'اگه امروز هیچ کار بزرگی نکردی ولی هنوز مهربونی و اخلاقت خوبه، همون خودش کلی ارزشه.',
+        'این پیام آخر هم فقط یه چیز می‌گه: مرسی که هستی زهرا!'
+      ];
+
+      // 8 Mood Categories x 5 Messages = 40 Natural Messages
+      const moodCategories = [
+        {
+          id: 'sad',
+          title: 'وقتی ناراحتی',
+          messages: [
+            'اشکالی نداره اگه الان دلت گرفته. مجبور نیستی الکی بخندی؛ فقط بدون این حس می‌گذره و تنها نیستی.',
+            'بعضی روزا واقعاً سنگینن، نه به خاطر اینکه تو ضعیفی. یه کم با خودت آروم تا کن.',
+            'ناراحتیِ الان هیچی از ارزش و قشنگی تو کم نمی‌کنه. فقط یه روز بده، همین.',
+            'اگه دلت می‌خواد حرف بزنی و خالی کنی، یادت باشه من همیشه بدون قضاوت گوش می‌دم.',
+            'یه کم از شلوغی فاصله بگیر، یه لیوان آب بخور و به خودت سخت نگیر.'
+          ]
+        },
+        {
+          id: 'tired',
+          title: 'وقتی خسته‌ای',
+          messages: [
+            'خسته‌ای چون کلی زحمت کشیدی. الان وقت استراحته، نه اینکه به خودت عذاب وجدان بدی.',
+            'اگه دو ساعت استراحت کنی هیچی از دست نمی‌ره، ولی حالِ خودت کلی بهتر می‌شه.',
+            'لازم نیست همه کارا همین امروز تموم بشن. بذار یه کم نفست جا بیاد.',
+            'یه کم استراحت واقعی به خودت بده؛ هم جسمت لازمش داره هم ذهنت.',
+            'گوشی هم شارژش تموم می‌شه می‌زننش به شارژ؛ تو هم حقته یه کم شارژ بشی.'
+          ]
+        },
+        {
+          id: 'doubt',
+          title: 'وقتی به خودت شک داری',
+          messages: [
+            'اون صدایی که تو سرت همه‌ش بهت گیر می‌ده، بیشتر وقتا از خستگیه نه از واقعیت.',
+            'یه نگاه به عقب بنداز؛ خیلی چیزا رو یاد گرفتی و از خیلی روزا رد شدی.',
+            'هم استعدادش رو داری، هم اخلاقش رو. فقط بعضی وقتا خودت زیادی سخت می‌گیری.',
+            'هیچ‌کس از اول همه‌چی رو بلد نبوده. داری عالی پیش می‌ری.',
+            'اگه شک داری کافی هستی یا نه، جوابِ من اینه: خیلی هم بیشتر از کافی هستی!'
+          ]
+        },
+        {
+          id: 'alone',
+          title: 'وقتی حوصله هیچ‌کس رو نداری',
+          messages: [
+            'کاملاً حقته! بعضی وقتا آدم فقط می‌خواد تنها باشه و با هیچ‌کس حرف نزنه.',
+            'لازم نیست جواب همه رو همین الان بدی. گوشی رو بذار کنار و راحت باش.',
+            'بی‌حوصلگی یعنی باتری اجتماعیت تموم شده، اصلاً چیز عجیبی نیست.',
+            'هر وقت حوصله‌ت برگشت همه همون‌جا هستن. الان فقط مالِ خودت باش.',
+            'یه گوشه ساکت، بدون اینکه مجبور باشی به کسی توضیح بدی. کیفش رو ببر.'
+          ]
+        },
+        {
+          id: 'need-smile',
+          title: 'وقتی نیاز به لبخند داری',
+          messages: [
+            'فقط یادت باشه این صفحه رو نشستم ساختم که دقیقاً تو همین لحظه‌ها یه کم لبخند بزنی!',
+            'می‌دونستی وقتی می‌خندی حالِ دور و بریات هم خوب می‌شه؟ یه امتحان بکن!',
+            'اگه لبخندت الان قایم شده، بگو بیاد بیرون؛ خیلی بهت میاد.',
+            'بعضی وقتا یه لبخند الکی هم یهو تبدیل به خنده واقعی می‌شه.',
+            'امیدوارم تا پنج دقیقه دیگه یه چیز بامزه ببینی و حسابی بخندی.'
+          ]
+        },
+        {
+          id: 'proud',
+          title: 'وقتی می‌خوای به خودت افتخار کنی',
+          messages: [
+            'آفرین بهت! هم درس و پروژه‌های گرافیکت رو پیش می‌بری، هم هنوز این‌قدر دختر خوب و مهربونی هستی.',
+            'با همه روزای سختی که داشتی، هنوز سرِ پایی و قلبت رو خوب نگه داشتی. این کم چیزی نیست.',
+            'اینکه مستقل راهِ خودتو می‌ری و دنبال علاقه‌ت هستی واقعاً دمت گرم داره.',
+            'هر قدم کوچیکی که برمی‌داری مهمه؛ خودتو دست‌کم نگیر.',
+            'واقعاً می‌تونی به خودت افتخار کنی، زهرا. خیلی خوب داری پیش می‌ری.'
+          ]
+        },
+        {
+          id: 'great-day',
+          title: 'وقتی یه روز عالی داری',
+          messages: [
+            'ایول! تا می‌تونی از امروزت لذت ببر!',
+            'دیدی؟ دقیقاً همون روزای خوبی که حقته. امیدوارم همیشه این‌جوری باشی.',
+            'الان وقتشه با اون خنده قشنگت حسابی کیف کنی!',
+            'این حس خوب رو تا آخر شب نگه دار و هیچی نذار خرابش کنه.',
+            'خیلی خوشحالم که امروزت خوبه! واقعاً حقته.'
+          ]
+        },
+        {
+          id: 'just-laugh',
+          title: 'وقتی فقط می‌خوای بخندی',
+          messages: [
+            'اگه الان مغزت ۳۷ تا تب باز کرده و نمی‌دونی صدا از کدوم میاد، خوش اومدی به جمع همه‌مون!',
+            'بعضی روزا آدم فقط می‌خواد مثل گربه‌ها بره زیر آفتاب بخوابه و هیچ مسئولیتی نداشته باشه. کاملاً منطقیه!',
+            'یه تست ساده: سعی کن با صدای بلند بگی «پفک» ولی اخم کنی. نمی‌شه، نه؟ خب پس بخند!',
+            'قانون جدید: هر کی امروز زیادی جدی باشه باید واسه بقیه چای بخره.',
+            'لطفاً الان یه لبخند بزن تا این دکمه احساس مفید بودن بکنه!'
+          ]
+        },
+        {
+          id: 'insomnia',
+          title: 'وقتی نصف‌شب خوابت نمی‌بره',
+          messages: [
+            'مغز آدما ساعت ۲ شب معمولاً حرفای الکی و بزرگ‌نمایی‌شده می‌زنه؛ الان حرفاشو خیلی جدی نگیر.',
+            'لازم نیست همین امشب تکلیف کل دنیا و فردا رو مشخص کنی. بذارش واسه صبح که سرحال‌تری.',
+            'گوشی رو یکم بذار کنار، نور اتاقو کم کن و فقط چند تا نفس آروم بکش. حتی اگه خوابت نبره، بدنت داره استراحت می‌کنه.',
+            'هر فکری الان تو سرته، فردا ظهر خیلی کوچیک‌تر و ساده‌تر به نظر میاد. قول می‌دم.',
+            'امیدوارم تا چند دقیقه دیگه چشمات گرم بشه و یه خوابِ آروم و راحت داشته باشی، زهرا.'
+          ]
+        }
+      ];
+
+      /* ================= THEME, MOTION & SOUND CONTROLS ================= */
+      const themeToggle = document.getElementById('themeToggle');
+      const themeIconMoon = document.getElementById('themeIconMoon');
+      const themeIconSun = document.getElementById('themeIconSun');
+
+      let inkColor = '#1D1B18';
+      function syncInkSwatchUI() {
+        const dot = document.getElementById('inkColorDot');
+        const input = document.getElementById('inkColorInput');
+        if (dot) dot.style.backgroundColor = inkColor;
+        if (input) input.value = inkColor;
+      }
+
+      function applyTheme(theme) {
+        appState.theme = theme;
+        document.documentElement.setAttribute('data-theme', theme);
+        const isDark = theme === 'dark';
+        const themeColorMeta = document.getElementById('themeColorMeta');
+        if (themeColorMeta) themeColorMeta.setAttribute('content', isDark ? '#151311' : '#FAF6F0');
+        themeToggle.setAttribute('aria-pressed', String(isDark));
+        themeIconMoon.style.display = isDark ? 'none' : 'block';
+        themeIconSun.style.display = isDark ? 'block' : 'none';
+        persist();
+      }
+      applyTheme(appState.theme);
+
+      themeToggle.addEventListener('click', () => {
+        applyTheme(appState.theme === 'dark' ? 'light' : 'dark');
+        playChime(440, 0.1);
+      });
+
+      const motionToggle = document.getElementById('motionToggle');
+      function applyMotion(reduced) {
+        appState.reducedMotion = reduced;
+        document.body.classList.toggle('reduced-motion', reduced);
+        motionToggle.setAttribute('aria-pressed', String(reduced));
+        persist();
+      }
+      applyMotion(appState.reducedMotion);
+
+      motionToggle.addEventListener('click', () => {
+        applyMotion(!appState.reducedMotion);
+        showToast(appState.reducedMotion ? 'حرکت‌های صفحه کم شد.' : 'حرکت‌های صفحه برگشت.');
+      });
+
+      const soundToggle = document.getElementById('soundToggle');
+      const soundIconOff = document.getElementById('soundIconOff');
+      const soundIconOn = document.getElementById('soundIconOn');
+
+      soundToggle.addEventListener('click', () => {
+        soundEnabled = !soundEnabled;
+        soundToggle.setAttribute('aria-pressed', String(soundEnabled));
+        soundIconOff.style.display = soundEnabled ? 'none' : 'block';
+        soundIconOn.style.display = soundEnabled ? 'block' : 'none';
+        if (soundEnabled) {
+          playChime(523.25, 0.18);
+          showToast('صدا روشن شد.');
+        } else {
+          showToast('صدا خاموش شد.');
+        }
+      });
+
+      /* ================= SMART TIME-BASED GREETING ================= */
+      (function setTimeGreeting() {
+        const greetingEl = document.getElementById('heroGreeting');
+        if (!greetingEl) return;
+        const h = new Date().getHours();
+        if (h >= 0 && h < 5) {
+          greetingEl.textContent = 'هنوز بیداری زهرا؟ امیدوارم فردا راحت بخوابی';
+        } else if (h >= 5 && h < 12) {
+          greetingEl.textContent = 'صبح بخیر زهرا';
+        } else if (h >= 12 && h < 19) {
+          greetingEl.textContent = 'عصر بخیر زهرا';
+        } else {
+          greetingEl.textContent = 'شب بخیر زهرا';
+        }
+      })();
+
+      /* ================= MINIMALIST FINE-LINE CELEBRATION SPARKS ================= */
+      function launchCelebrationSparks() {
+        const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (appState.reducedMotion || prefersReduced) return;
+
+        const layer = document.createElement('div');
+        layer.className = 'spark-layer';
+        layer.setAttribute('aria-hidden', 'true');
+
+        const colors = ['var(--ochre)', 'var(--accent)', 'var(--sage)'];
+        const shapes = [
+          '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M12 2l2.2 6.8L21 11l-6.8 2.2L12 20l-2.2-6.8L3 11l6.8-2.2L12 2z"/></svg>',
+          '<svg width="11" height="11" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="5"/></svg>',
+          '<svg width="13" height="13" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M9 2v14M2 9h14"/></svg>'
+        ];
+
+        for (let i = 0; i < 22; i++) {
+          const item = document.createElement('span');
+          item.className = 'spark-item';
+          item.style.left = (4 + Math.random() * 92) + '%';
+          item.style.color = colors[i % colors.length];
+          item.style.setProperty('--dur', (1.8 + Math.random() * 1.1).toFixed(2) + 's');
+          item.style.setProperty('--delay', (Math.random() * 0.45).toFixed(2) + 's');
+          item.style.setProperty('--drift', ((Math.random() - 0.5) * 90).toFixed(0) + 'px');
+          item.style.setProperty('--rot', ((Math.random() - 0.5) * 260).toFixed(0) + 'deg');
+          item.innerHTML = shapes[i % shapes.length];
+          layer.appendChild(item);
+        }
+
+        document.body.appendChild(layer);
+        setTimeout(() => {
+          if (layer.parentNode) layer.parentNode.removeChild(layer);
+        }, 3400);
+      }
+
+      /* ================= SCROLL PROGRESS & ACTIVE CHAPTER ================= */
+      const progressFill = document.getElementById('scrollProgress');
+      const chapterNav = document.querySelector('.chapter-nav');
+      const chapterLinks = Array.from(document.querySelectorAll('.chapter-pill'));
+      const chapters = Array.from(document.querySelectorAll('.chapter'));
+      let lastActiveChapterId = '';
+
+      function onScroll() {
+        const docH = document.documentElement.scrollHeight - window.innerHeight;
+        const pct = docH > 0 ? Math.min(100, Math.max(0, (window.scrollY / docH) * 100)) : 0;
+        progressFill.style.width = pct + '%';
+
+        let currentId = '';
+        for (const sec of chapters) {
+          const rect = sec.getBoundingClientRect();
+          if (rect.top <= 160) currentId = sec.id;
+        }
+        let activeLink = null;
+        chapterLinks.forEach(link => {
+          const isActive = link.getAttribute('href') === '#' + currentId;
+          link.classList.toggle('active', isActive);
+          if (isActive) activeLink = link;
+        });
+
+        if (currentId && currentId !== lastActiveChapterId && activeLink && chapterNav) {
+          lastActiveChapterId = currentId;
+          const navRect = chapterNav.getBoundingClientRect();
+          const pillRect = activeLink.getBoundingClientRect();
+          const delta = (pillRect.left + pillRect.width / 2) - (navRect.left + navRect.width / 2);
+          if (Math.abs(delta) > 8) {
+            chapterNav.scrollBy({ left: delta, behavior: appState.reducedMotion ? 'auto' : 'smooth' });
+          }
+        }
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      document.getElementById('startJourneyBtn').addEventListener('click', () => {
+        unlockAchievement('started', 'شروع کردی');
+        playChime(523.25, 0.16);
+        const dailyEl = document.getElementById('daily');
+        if (dailyEl) dailyEl.scrollIntoView({ behavior: appState.reducedMotion ? 'auto' : 'smooth' });
+      });
+
+      /* ================= 01 — DAILY SMILE ================= */
+      const now = new Date();
+      const todayMidnight = new Date(now.getFullYear(), now.getMonth(), now.getDate()).getTime();
+      if (!appState.firstVisitMidnight) {
+        appState.firstVisitMidnight = todayMidnight;
+        persist();
+      }
+      const daysSinceStart = Math.max(0, Math.floor((todayMidnight - appState.firstVisitMidnight) / 86400000));
+      const todayIndex = daysSinceStart % dailyMessages.length;
+      let currentDailyIndex = todayIndex;
+
+      let formattedDate = 'امروز';
+      try {
+        formattedDate = new Intl.DateTimeFormat('fa-IR', { weekday: 'long', day: 'numeric', month: 'long' }).format(now);
+      } catch (e) {
+        formattedDate = 'پیام امروز';
+      }
+
+      const dailyPalettes = [
+        { name: 'صبحِ آروم', colors: ['#FAF6F0', '#E8D5B7', '#C85A32', '#3D6B59'] },
+        { name: 'سفال و زیتون', colors: ['#F4EDE2', '#D98A6C', '#6B7F62', '#2E2A26'] },
+        { name: 'غروبِ ملایم', colors: ['#FCEEE3', '#E39D6F', '#B85D43', '#4A4E69'] },
+        { name: 'جوهر و کاغذ', colors: ['#F7F3EB', '#CFC6B8', '#5E6B73', '#1E2326'] },
+        { name: 'بهارِ کم‌رنگ', colors: ['#F5F7F2', '#B7C9B5', '#E0A86E', '#53685B'] },
+        { name: 'قهوه و کرم', colors: ['#F6EFE6', '#D4B499', '#8C5E3C', '#3B281E'] },
+        { name: 'آسمونِ بعدازظهر', colors: ['#F2F5F7', '#9BB5C4', '#D99B52', '#2D4150'] },
+        { name: 'انار و کتان', colors: ['#FAF4EE', '#DFCBB9', '#A8423B', '#3E4C47'] },
+        { name: 'آفتابِ پاییزی', colors: ['#FBF6EC', '#E6B86A', '#C46D3B', '#4B3E35'] },
+        { name: 'مهِ صبحگاهی', colors: ['#F4F5F4', '#C4CFCB', '#738C82', '#34403C'] },
+        { name: 'گچ و فیروزه', colors: ['#F8F4ED', '#A3C4BC', '#417B7A', '#2B3A3B'] },
+        { name: 'گرم و ساده', colors: ['#F9F2E7', '#E2B091', '#9E5A47', '#3D3532'] },
+        { name: 'بارون و سنگ', colors: ['#F1F3F2', '#B5C2C7', '#6C7A82', '#2C3539'] },
+        { name: 'هل و دارچین', colors: ['#FBF5EC', '#D8C39E', '#A66A38', '#4F5D4E'] },
+        { name: 'گندم‌زار', colors: ['#FAF6EA', '#E3C770', '#B8893A', '#4A4336'] },
+        { name: 'آبیِ کاشی', colors: ['#F4F6F7', '#89AEC2', '#2F5D7C', '#1D2D3A'] },
+        { name: 'گلِ خشک', colors: ['#FAF3F0', '#DFB6B2', '#A86B6B', '#4E3D42'] },
+        { name: 'جنگلِ روشن', colors: ['#F4F6F0', '#A8BFA0', '#4F775A', '#24382B'] },
+        { name: 'شن و دریا', colors: ['#F7F1E5', '#D6C29F', '#5E8C8A', '#2B4C52'] },
+        { name: 'نارنجیِ کدر', colors: ['#FCF3EB', '#E6A073', '#BD633C', '#3F322C'] },
+        { name: 'یاس و خاکستری', colors: ['#F6F4F7', '#C8BFD0', '#7D6F8A', '#342E3A'] },
+        { name: 'پسته و عسل', colors: ['#F7F6EE', '#C2CFA0', '#D9A441', '#48523B'] },
+        { name: 'آجرِ قدیمی', colors: ['#F9F2EC', '#D69F86', '#9C4A36', '#3A2925'] },
+        { name: 'شبِ آروم', colors: ['#F2F3F6', '#9AA5B8', '#485873', '#1E2533'] },
+        { name: 'لیمو و نعناع', colors: ['#F9FAF2', '#DCE09E', '#7FA68A', '#364A3E'] },
+        { name: 'چای و نبات', colors: ['#FAF4EB', '#E0B973', '#9E5831', '#42281D'] },
+        { name: 'ساحلِ صبح', colors: ['#F6F7F5', '#C2D4D6', '#E0A882', '#3E565C'] },
+        { name: 'برگِ چنار', colors: ['#FBF4EA', '#DF9F5B', '#9E532F', '#4E4A36'] },
+        { name: 'ابر و نقره', colors: ['#F5F6F7', '#C9CFD4', '#7C8791', '#2E343B'] },
+        { name: 'گیلاس و کرم', colors: ['#FAF2F0', '#E2C2B9', '#993D45', '#3B2326'] },
+        { name: 'آفتابِ آخر ماه', colors: ['#FBF7EE', '#EBC374', '#C86D44', '#385C52'] }
+      ];
+
+      const dailyDateLabel = document.getElementById('dailyDateLabel');
+      const dailyIndexLabel = document.getElementById('dailyIndexLabel');
+      const dailyQuoteText = document.getElementById('dailyQuoteText');
+      const dailyTodayBtn = document.getElementById('dailyTodayBtn');
+      const dailySaveBtn = document.getElementById('dailySaveBtn');
+      const paletteNameEl = document.getElementById('paletteName');
+      const dailyPaletteSwatches = document.getElementById('dailyPaletteSwatches');
+
+      function renderDailyPalette() {
+        const pal = dailyPalettes[currentDailyIndex % dailyPalettes.length];
+        paletteNameEl.textContent = pal.name;
+        dailyPaletteSwatches.innerHTML = '';
+        pal.colors.forEach(hex => {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'palette-chip';
+          btn.setAttribute('aria-label', 'کپی کد رنگ ' + hex);
+          btn.innerHTML =
+            '<span class="palette-color-box" style="background:' + hex + '"></span>' +
+            '<span class="palette-hex">' + hex + '</span>';
+          btn.addEventListener('click', () => {
+            copyText(hex);
+            showToast('کد رنگ ' + hex + ' کپی شد.');
+            playChime(587.33, 0.09);
+          });
+          dailyPaletteSwatches.appendChild(btn);
+        });
+      }
+
+      function renderDaily() {
+        const msg = dailyMessages[currentDailyIndex];
+        dailyQuoteText.textContent = msg;
+        const isToday = currentDailyIndex === todayIndex;
+        dailyDateLabel.textContent = isToday ? formattedDate : 'یه روزِ دیگه';
+        dailyIndexLabel.textContent = 'پیام ' + toFa(currentDailyIndex + 1) + ' از ' + toFa(dailyMessages.length);
+        dailyTodayBtn.style.display = isToday ? 'none' : 'inline-flex';
+        dailySaveBtn.classList.toggle('saved', isSaved(msg));
+        dailySaveBtn.textContent = isSaved(msg) ? 'ذخیره شده ✓' : 'نگه‌ش دار';
+        renderDailyPalette();
+      }
+
+      document.getElementById('dailyPeekBtn').addEventListener('click', () => {
+        currentDailyIndex = (currentDailyIndex + 1) % dailyMessages.length;
+        animateTextSwap(dailyQuoteText, 'next', renderDaily);
+        playChime(587.33, 0.12);
+      });
+
+      dailyTodayBtn.addEventListener('click', () => {
+        currentDailyIndex = todayIndex;
+        animateTextSwap(dailyQuoteText, 'prev', renderDaily);
+      });
+
+      document.getElementById('dailyCopyBtn').addEventListener('click', () => {
+        copyText(dailyMessages[currentDailyIndex]);
+      });
+
+      dailySaveBtn.addEventListener('click', () => {
+        toggleSaveMessage(dailyMessages[currentDailyIndex]);
+      });
+
+      renderDaily();
+
+      /* ================= 02 — PERSONAL APPRECIATION DECK ================= */
+      let activeFacet = 'all';
+      let filteredCompliments = compliments.slice();
+      let compIndex = 0;
+
+      const compFacetLabel = document.getElementById('compFacetLabel');
+      const compCounter = document.getElementById('compCounter');
+      const compText = document.getElementById('compText');
+      const compSaveBtn = document.getElementById('compSaveBtn');
+      const filterChips = Array.from(document.querySelectorAll('.filter-chip'));
+
+      function renderCompliment(direction = false) {
+        const item = filteredCompliments[compIndex];
+        if (!item) return;
+        const apply = () => {
+          compFacetLabel.textContent = item.label;
+          compCounter.textContent = toFa(compIndex + 1) + ' از ' + toFa(filteredCompliments.length);
+          compText.textContent = item.text;
+          compSaveBtn.classList.toggle('saved', isSaved(item.text));
+          compSaveBtn.textContent = isSaved(item.text) ? 'ذخیره شده ✓' : 'نگه‌ش دار';
+        };
+        if (direction) {
+          animateTextSwap(compText, direction === true ? 'next' : direction, apply);
+        } else {
+          apply();
+        }
+      }
+
+      filterChips.forEach(chip => {
+        chip.addEventListener('click', () => {
+          activeFacet = chip.dataset.facet;
+          filterChips.forEach(c => {
+            const isActive = c === chip;
+            c.classList.toggle('active', isActive);
+            c.setAttribute('aria-selected', String(isActive));
+          });
+          filteredCompliments = activeFacet === 'all'
+            ? compliments.slice()
+            : compliments.filter(c => c.facet === activeFacet);
+          compIndex = 0;
+          renderCompliment('fade');
+          playChime(493.88, 0.1);
+        });
+      });
+
+      document.getElementById('compNextBtn').addEventListener('click', () => {
+        compIndex = (compIndex + 1) % filteredCompliments.length;
+        renderCompliment('next');
+        playChime(523.25, 0.1);
+      });
+
+      document.getElementById('compPrevBtn').addEventListener('click', () => {
+        compIndex = (compIndex - 1 + filteredCompliments.length) % filteredCompliments.length;
+        renderCompliment('prev');
+        playChime(440, 0.1);
+      });
+
+      document.getElementById('compRandBtn').addEventListener('click', () => {
+        if (filteredCompliments.length <= 1) return;
+        let next = compIndex;
+        while (next === compIndex) {
+          next = Math.floor(Math.random() * filteredCompliments.length);
+        }
+        compIndex = next;
+        renderCompliment('fade');
+        playChime(659.25, 0.12);
+      });
+
+      document.getElementById('compCopyBtn').addEventListener('click', () => {
+        copyText(filteredCompliments[compIndex].text);
+      });
+
+      compSaveBtn.addEventListener('click', () => {
+        toggleSaveMessage(filteredCompliments[compIndex].text);
+      });
+
+      renderCompliment(false);
+
+      /* ================= 03 — UNEXPECTED COMPLIMENTS MACHINE ================= */
+      let ticketPool = [];
+      let currentTicketText = '';
+      const stampTriggerBtn = document.getElementById('stampTriggerBtn');
+      const ticketPaper = document.getElementById('ticketPaper');
+      const ticketSerial = document.getElementById('ticketSerial');
+      const ticketText = document.getElementById('ticketText');
+      const machineCountText = document.getElementById('machineCountText');
+      const ticketSaveBtn = document.getElementById('ticketSaveBtn');
+      const ticketActions = document.getElementById('ticketActions');
+
+      function refillTicketPool() {
+        ticketPool = machineTickets.map((_, i) => i).sort(() => Math.random() - 0.5);
+      }
+      refillTicketPool();
+
+      function updateMachineCount() {
+        machineCountText.textContent = appState.machineCount > 0
+          ? toFa(appState.machineCount) + ' تا دیدی'
+          : 'هنوز نزدی روش';
+      }
+      updateMachineCount();
+
+      stampTriggerBtn.addEventListener('click', () => {
+        if (ticketPool.length === 0) refillTicketPool();
+        const idx = ticketPool.pop();
+        currentTicketText = machineTickets[idx];
+        appState.machineCount += 1;
+        persist();
+        updateMachineCount();
+        unlockAchievement('machineUsed', 'اولین تعریف یهویی');
+
+        stampTriggerBtn.classList.add('pressing');
+        ticketPaper.classList.add('printing');
+        playChime(587.33, 0.14);
+
+        setTimeout(() => {
+          stampTriggerBtn.classList.remove('pressing');
+          ticketSerial.textContent = 'یادداشت #' + toFa(String(appState.machineCount).padStart(3, '0'));
+          ticketText.textContent = currentTicketText;
+          ticketActions.style.display = 'flex';
+          ticketPaper.classList.remove('printing');
+          syncSaveButtons();
+        }, appState.reducedMotion ? 10 : 180);
+      });
+
+      document.getElementById('ticketCopyBtn').addEventListener('click', () => {
+        if (!currentTicketText) return;
+        copyText(currentTicketText);
+      });
+
+      ticketSaveBtn.addEventListener('click', () => {
+        if (!currentTicketText) return;
+        toggleSaveMessage(currentTicketText);
+      });
+
+      /* ================= 04 — SELF-WORTH ACCORDION ================= */
+      const worthAccordion = document.getElementById('worthAccordion');
+      worthItems.forEach((item, idx) => {
+        const wrap = document.createElement('div');
+        wrap.className = 'worth-item' + (idx === 0 ? ' open' : '');
+
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'worth-trigger';
+        btn.setAttribute('aria-expanded', idx === 0 ? 'true' : 'false');
+        btn.innerHTML =
+          '<span><span class="worth-index">' + toFa(String(idx + 1).padStart(2, '0')) + '</span>' + item.title + '</span>' +
+          '<svg class="worth-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>';
+
+        const panel = document.createElement('div');
+        panel.className = 'worth-panel';
+        panel.textContent = item.body;
+
+        btn.addEventListener('click', () => {
+          const isOpen = wrap.classList.toggle('open');
+          btn.setAttribute('aria-expanded', String(isOpen));
+          playChime(isOpen ? 523.25 : 440, 0.09);
+        });
+
+        wrap.appendChild(btn);
+        wrap.appendChild(panel);
+        worthAccordion.appendChild(wrap);
+      });
+
+      /* ================= 05 — WHEN YOU NEED SOMEONE ================= */
+      const needPills = document.getElementById('needPills');
+      const needResponse = document.getElementById('needResponse');
+      const breathWrap = document.getElementById('breathWrap');
+      const breathToggleBtn = document.getElementById('breathToggleBtn');
+      const breathPanel = document.getElementById('breathPanel');
+      const breathCircle = document.getElementById('breathCircle');
+      const breathCount = document.getElementById('breathCount');
+      const breathPhase = document.getElementById('breathPhase');
+      const breathMeta = document.getElementById('breathMeta');
+      const breathStopBtn = document.getElementById('breathStopBtn');
+
+      let breathTimer = null;
+      let breathRunning = false;
+      const breathPhases = [
+        { cls: 'inhale', label: 'آروم نفس بکش تو (دم)' },
+        { cls: 'hold', label: '۴ ثانیه نگه دار' },
+        { cls: 'exhale', label: 'آروم بده بیرون (بازدم)' }
+      ];
+
+      function stopBreathing(done = false) {
+        if (breathTimer) {
+          clearInterval(breathTimer);
+          breathTimer = null;
+        }
+        breathRunning = false;
+        breathCircle.className = 'breath-circle';
+        if (done) {
+          breathPhase.textContent = 'خوب بود؛ یکم آروم‌تر شدی؟';
+          breathCount.textContent = '✓';
+          breathMeta.textContent = 'هر وقت دوباره خواستی همین‌جاست.';
+          breathToggleBtn.textContent = 'دوباره یک دقیقه نفس عمیق';
+        } else {
+          breathPanel.classList.remove('open');
+          breathPanel.setAttribute('aria-hidden', 'true');
+          breathToggleBtn.textContent = 'یک دقیقه نفس عمیق';
+        }
+      }
+
+      function startBreathing() {
+        stopBreathing(false);
+        breathRunning = true;
+        breathPanel.classList.add('open');
+        breathPanel.setAttribute('aria-hidden', 'false');
+        breathToggleBtn.textContent = 'بستن تمرین تنفس';
+
+        let prepSec = 3;
+        let totalStep = 0; // 0..14 (5 cycles x 3 phases = 60 seconds)
+        let secLeft = 4;
+
+        breathCircle.className = 'breath-circle';
+        breathPhase.textContent = 'آماده شو...';
+        breathCount.textContent = toFa(prepSec);
+        breathMeta.textContent = 'شونه‌هات رو شل کن، ۳ ثانیه دیگه شروع می‌کنیم';
+
+        const applyStep = () => {
+          const cycle = Math.floor(totalStep / 3) + 1;
+          const phase = breathPhases[totalStep % 3];
+          breathPhase.textContent = phase.label;
+          breathCount.textContent = toFa(secLeft);
+          breathMeta.textContent = 'دور ' + toFa(cycle) + ' از ۵ · ۴ ثانیه دم، ۴ ثانیه مکث، ۴ ثانیه بازدم';
+          breathCircle.className = 'breath-circle ' + phase.cls;
+        };
+
+        breathTimer = setInterval(() => {
+          if (prepSec > 0) {
+            prepSec -= 1;
+            if (prepSec > 0) {
+              breathCount.textContent = toFa(prepSec);
+              breathMeta.textContent = 'شونه‌هات رو شل کن، ' + toFa(prepSec) + ' ثانیه دیگه شروع می‌کنیم';
+              return;
+            }
+            // Start Cycle 1 smoothly right after 3-2-1 finishes
+            playChime(440, 0.12);
+            applyStep();
+            return;
+          }
+
+          secLeft -= 1;
+          if (secLeft <= 0) {
+            totalStep += 1;
+            if (totalStep >= 15) {
+              playChime(523.25, 0.22);
+              stopBreathing(true);
+              return;
+            }
+            secLeft = 4;
+            playChime(totalStep % 3 === 0 ? 440 : 523.25, 0.08);
+          }
+          applyStep();
+        }, 1000);
+      }
+
+      breathToggleBtn.addEventListener('click', () => {
+        if (breathRunning) {
+          stopBreathing(false);
+        } else {
+          startBreathing();
+        }
+      });
+
+      breathStopBtn.addEventListener('click', () => stopBreathing(false));
+
+      needOptions.forEach((opt, idx) => {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'need-pill' + (idx === 0 ? ' active' : '');
+        b.textContent = opt.label;
+        b.addEventListener('click', () => {
+          Array.from(needPills.children).forEach(el => el.classList.remove('active'));
+          b.classList.add('active');
+          needResponse.textContent = opt.text;
+          playChime(493.88, 0.11);
+        });
+        needPills.appendChild(b);
+      });
+      needResponse.textContent = needOptions[0].text;
+
+      /* ================= 06 — SMILE GENERATOR (45 UNIQUE) ================= */
+      let smilePool = [];
+      let currentSmile = smileMessages[0];
+      const smileDisplay = document.getElementById('smileDisplay');
+      const smileCounter = document.getElementById('smileCounter');
+      const smileSaveBtn = document.getElementById('smileSaveBtn');
+
+      function refillSmilePool() {
+        smilePool = smileMessages.map((_, i) => i).filter(i => i !== 0).sort(() => Math.random() - 0.5);
+      }
+      refillSmilePool();
+
+      function updateSmileCounter() {
+        const currentNumber = appState.smilesSeenCount + 1;
+        const totalSmiles = toFa(smileMessages.length);
+        smileCounter.textContent = appState.smilesSeenCount > 0
+          ? 'پیام شماره ' + toFa(currentNumber) + ' (از ' + totalSmiles + ' تا پیام بدون تکرار)'
+          : 'پیام ۱ از ' + totalSmiles;
+        if (appState.smilesSeenCount >= 5) unlockAchievement('smiles5', '۵ تا پیام لبخند');
+      }
+      updateSmileCounter();
+
+      document.getElementById('smileGenBtn').addEventListener('click', () => {
+        if (smilePool.length === 0) {
+          smilePool = smileMessages.map((_, i) => i).sort(() => Math.random() - 0.5);
+        }
+        const idx = smilePool.pop();
+        currentSmile = smileMessages[idx];
+        appState.smilesSeenCount += 1;
+        persist();
+        updateSmileCounter();
+
+        smileDisplay.classList.add('pop');
+        playChime(523.25 + (idx % 5) * 40, 0.13);
+        setTimeout(() => {
+          smileDisplay.textContent = currentSmile;
+          smileDisplay.classList.remove('pop');
+          syncSaveButtons();
+        }, appState.reducedMotion ? 10 : 140);
+      });
+
+      document.getElementById('smileCopyBtn').addEventListener('click', () => {
+        copyText(currentSmile);
+      });
+
+      smileSaveBtn.addEventListener('click', () => {
+        toggleSaveMessage(currentSmile);
+      });
+
+      /* ================= 07 — MOOD COLLECTION (8 CATEGORIES) ================= */
+      const moodGrid = document.getElementById('moodGrid');
+      const moodActiveTitle = document.getElementById('moodActiveTitle');
+      const moodCounter = document.getElementById('moodCounter');
+      const moodMessage = document.getElementById('moodMessage');
+      const moodSaveBtn = document.getElementById('moodSaveBtn');
+
+      let activeMoodIdx = 0;
+      let activeMoodMsgIdx = 0;
+
+      function renderMood(direction = false) {
+        const cat = moodCategories[activeMoodIdx];
+        const msg = cat.messages[activeMoodMsgIdx];
+        const apply = () => {
+          moodActiveTitle.textContent = cat.title;
+          moodCounter.textContent = toFa(activeMoodMsgIdx + 1) + ' از ' + toFa(cat.messages.length);
+          moodMessage.textContent = msg;
+          moodSaveBtn.classList.toggle('saved', isSaved(msg));
+          moodSaveBtn.textContent = isSaved(msg) ? 'ذخیره شده ✓' : 'نگه‌ش دار';
+        };
+        if (direction) {
+          animateTextSwap(moodMessage, direction === true ? 'next' : direction, apply);
+        } else {
+          apply();
+        }
+      }
+
+      moodCategories.forEach((cat, idx) => {
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'mood-btn' + (idx === 0 ? ' active' : '');
+        btn.setAttribute('role', 'tab');
+        btn.setAttribute('aria-selected', idx === 0 ? 'true' : 'false');
+        btn.textContent = cat.title;
+        btn.addEventListener('click', () => {
+          activeMoodIdx = idx;
+          activeMoodMsgIdx = 0;
+          Array.from(moodGrid.children).forEach((el, i) => {
+            el.classList.toggle('active', i === idx);
+            el.setAttribute('aria-selected', String(i === idx));
+          });
+          renderMood('fade');
+          playChime(493.88, 0.1);
+        });
+        moodGrid.appendChild(btn);
+      });
+
+      document.getElementById('moodNextBtn').addEventListener('click', () => {
+        const len = moodCategories[activeMoodIdx].messages.length;
+        activeMoodMsgIdx = (activeMoodMsgIdx + 1) % len;
+        renderMood('next');
+        playChime(523.25, 0.09);
+      });
+
+      document.getElementById('moodPrevBtn').addEventListener('click', () => {
+        const len = moodCategories[activeMoodIdx].messages.length;
+        activeMoodMsgIdx = (activeMoodMsgIdx - 1 + len) % len;
+        renderMood('prev');
+        playChime(440, 0.09);
+      });
+
+      document.getElementById('moodCopyBtn').addEventListener('click', () => {
+        copyText(moodCategories[activeMoodIdx].messages[activeMoodMsgIdx]);
+      });
+
+      moodSaveBtn.addEventListener('click', () => {
+        toggleSaveMessage(moodCategories[activeMoodIdx].messages[activeMoodMsgIdx]);
+      });
+
+      renderMood();
+
+      /* ================= 08 — MINI-GAME: FINE-LINE MEMORY MATCH ================= */
+      const symbols = [
+        {
+          id: 'sun',
+          label: 'آفتاب',
+          note: 'امیدوارم روزت همین‌قدر روشن باشه!',
+          svg: '<svg width="30" height="30" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="14" cy="14" r="4.5"/><path d="M14 3v3.5M14 21.5V25M3 14h3.5M21.5 14H25M6.2 6.2l2.5 2.5M19.3 19.3l2.5 2.5M21.8 6.2l-2.5 2.5M8.7 19.3l-2.5 2.5"/></svg>'
+        },
+        {
+          id: 'moon',
+          label: 'ماه',
+          note: 'امشب با خیال راحت بخوابی.',
+          svg: '<svg width="30" height="30" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16.5A8.5 8.5 0 0 1 11.5 7a8.5 8.5 0 1 0 9.5 9.5z"/></svg>'
+        },
+        {
+          id: 'leaf',
+          label: 'برگ',
+          note: 'خوبه! یه جفت دیگه جور شد.',
+          svg: '<svg width="30" height="30" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 6C13 6 7 12 7 21c9 0 15-6 15-15z"/><path d="M7 21l8-8"/></svg>'
+        },
+        {
+          id: 'star',
+          label: 'ستاره',
+          note: 'حافظه‌ت خوبه ها!',
+          svg: '<svg width="30" height="30" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3l2.8 8.2L25 14l-8.2 2.8L14 25l-2.8-8.2L3 14l8.2-2.8L14 3z"/></svg>'
+        },
+        {
+          id: 'wave',
+          label: 'موج',
+          note: 'آروم و ریلکس؛ عالی بود.',
+          svg: '<svg width="30" height="30" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M3 11c2.5-2.5 5-2.5 7.5 0s5 2.5 7.5 0 5-2.5 7 0"/><path d="M3 18c2.5-2.5 5-2.5 7.5 0s5 2.5 7.5 0 5-2.5 7 0"/></svg>'
+        },
+        {
+          id: 'eye',
+          label: 'چشم',
+          note: 'چشمای قشنگت همیشه بخندن.',
+          svg: '<svg width="30" height="30" viewBox="0 0 28 28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 14s4.2-6.5 11-6.5S25 14 25 14s-4.2 6.5-11 6.5S3 14 3 14z"/><circle cx="14" cy="14" r="3"/></svg>'
+        }
+      ];
+
+      const memoryGrid = document.getElementById('memoryGrid');
+      const gameMovesEl = document.getElementById('gameMoves');
+      const gamePairsEl = document.getElementById('gamePairs');
+      const gameBestEl = document.getElementById('gameBest');
+      const gameReward = document.getElementById('gameReward');
+
+      let deck = [];
+      let flippedCards = [];
+      let matchedPairs = 0;
+      let moves = 0;
+      let lockBoard = false;
+
+      function updateBestLabel() {
+        gameBestEl.textContent = appState.bestMoves ? toFa(appState.bestMoves) + ' حرکت' : '—';
+      }
+      updateBestLabel();
+
+      function initGame() {
+        deck = [...symbols, ...symbols]
+          .map((s, idx) => Object.assign({}, s, { uid: idx }))
+          .sort(() => Math.random() - 0.5);
+        flippedCards = [];
+        matchedPairs = 0;
+        moves = 0;
+        lockBoard = false;
+        gameMovesEl.textContent = '۰';
+        gamePairsEl.textContent = '۰';
+        gameReward.classList.remove('visible');
+        memoryGrid.innerHTML = '';
+
+        deck.forEach(card => {
+          const btn = document.createElement('button');
+          btn.type = 'button';
+          btn.className = 'mem-card';
+          btn.dataset.symbol = card.id;
+          btn.setAttribute('aria-label', 'کارت بسته');
+          btn.innerHTML =
+            '<span class="card-back" aria-hidden="true">' +
+              '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="12" r="2"/><circle cx="12" cy="12" r="7" stroke-dasharray="2 4"/></svg>' +
+            '</span>' +
+            '<span class="card-front">' + card.svg + '<span>' + card.label + '</span></span>';
+
+          btn.addEventListener('click', () => handleFlip(btn, card));
+          memoryGrid.appendChild(btn);
+        });
+      }
+
+      function handleFlip(btn, card) {
+        if (lockBoard || btn.classList.contains('flipped') || btn.classList.contains('matched')) return;
+        btn.classList.add('flipped');
+        btn.setAttribute('aria-label', card.label);
+        flippedCards.push({ btn, card });
+        playChime(440, 0.08);
+
+        if (flippedCards.length === 2) {
+          lockBoard = true;
+          moves += 1;
+          gameMovesEl.textContent = toFa(moves);
+
+          const [first, second] = flippedCards;
+          if (first.card.id === second.card.id) {
+            first.btn.classList.add('matched');
+            second.btn.classList.add('matched');
+            first.btn.disabled = true;
+            second.btn.disabled = true;
+            matchedPairs += 1;
+            gamePairsEl.textContent = toFa(matchedPairs);
+            flippedCards = [];
+            lockBoard = false;
+            playChime(659.25, 0.18);
+            showToast(first.card.note);
+
+            if (matchedPairs === symbols.length) {
+              gameReward.classList.add('visible');
+              if (!appState.bestMoves || moves < appState.bestMoves) {
+                appState.bestMoves = moves;
+                persist();
+                updateBestLabel();
+              }
+              unlockAchievement('gameWon', 'برنده بازی حافظه');
+              launchCelebrationSparks();
+            }
+          } else {
+            setTimeout(() => {
+              first.btn.classList.remove('flipped');
+              second.btn.classList.remove('flipped');
+              first.btn.setAttribute('aria-label', 'کارت بسته');
+              second.btn.setAttribute('aria-label', 'کارت بسته');
+              flippedCards = [];
+              lockBoard = false;
+            }, 680);
+          }
+        }
+      }
+
+      document.getElementById('gameResetBtn').addEventListener('click', () => {
+        initGame();
+        playChime(523.25, 0.1);
+      });
+      initGame();
+
+      /* ================= FINE-LINE MINI SKETCHBOOK ================= */
+      const canvas = document.getElementById('inkCanvas');
+      const canvasBox = canvas.parentElement;
+      const ctx = canvas.getContext('2d');
+      const undoCanvasBtn = document.getElementById('undoCanvasBtn');
+      const eraserToggleBtn = document.getElementById('eraserToggleBtn');
+      const dotGridToggleBtn = document.getElementById('dotGridToggleBtn');
+      const brushSizeBtns = Array.from(document.querySelectorAll('.brush-size-btn'));
+
+      const paperBtns = Array.from(document.querySelectorAll('.paper-btn'));
+      let drawing = false;
+      let lastPt = null;
+      let lastMid = null;
+      let lastCanvasWidth = 0;
+      let brushWidth = 1.8;
+      let isEraser = false;
+      let dotGridOn = false;
+      let paperColor = '#FAF6F0';
+      let paperIsDark = false;
+      const undoStack = [];
+      const MAX_UNDO = 25;
+
+      function updateUndoBtn() {
+        undoCanvasBtn.disabled = undoStack.length === 0;
+      }
+
+      function pushUndoSnapshot() {
+        if (canvas.width <= 0 || canvas.height <= 0) return;
+        undoStack.push(canvas.toDataURL());
+        if (undoStack.length > MAX_UNDO) undoStack.shift();
+        updateUndoBtn();
+      }
+
+      function sizeCanvas() {
+        const rect = canvasBox.getBoundingClientRect();
+        const newW = Math.floor(rect.width);
+        if (newW <= 0) return;
+        if (newW === lastCanvasWidth && canvas.width > 0) return;
+        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        const prev = canvas.width > 0 ? canvas.toDataURL() : null;
+        lastCanvasWidth = newW;
+        canvas.width = Math.max(1, Math.floor(rect.width * dpr));
+        canvas.height = Math.max(1, Math.floor(rect.height * dpr));
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        ctx.lineCap = 'round';
+        ctx.lineJoin = 'round';
+        ctx.lineWidth = brushWidth;
+        if (prev) {
+          const img = new Image();
+          img.onload = () => ctx.drawImage(img, 0, 0, rect.width, rect.height);
+          img.src = prev;
+        }
+      }
+      window.addEventListener('resize', sizeCanvas);
+      window.addEventListener('load', sizeCanvas);
+      sizeCanvas();
+
+      function getCanvasPoint(e) {
+        const rect = canvas.getBoundingClientRect();
+        return { x: e.clientX - rect.left, y: e.clientY - rect.top };
+      }
+
+      function setEraserMode(enabled) {
+        isEraser = enabled;
+        eraserToggleBtn.classList.toggle('active', enabled);
+        eraserToggleBtn.setAttribute('aria-pressed', String(enabled));
+      }
+
+      canvas.addEventListener('pointerdown', (e) => {
+        pushUndoSnapshot();
+        drawing = true;
+        canvas.setPointerCapture(e.pointerId);
+        const pt = getCanvasPoint(e);
+        lastPt = pt;
+        lastMid = pt;
+        ctx.save();
+        ctx.globalCompositeOperation = isEraser ? 'destination-out' : 'source-over';
+        const r = isEraser ? Math.max(7, brushWidth * 1.8) : Math.max(0.9, brushWidth / 2);
+        ctx.beginPath();
+        ctx.arc(pt.x, pt.y, r, 0, Math.PI * 2);
+        ctx.fillStyle = inkColor;
+        ctx.fill();
+        ctx.restore();
+      });
+
+      canvas.addEventListener('pointermove', (e) => {
+        if (!drawing || !lastPt || !lastMid) return;
+        const pt = getCanvasPoint(e);
+        const mid = { x: (lastPt.x + pt.x) / 2, y: (lastPt.y + pt.y) / 2 };
+        ctx.save();
+        ctx.globalCompositeOperation = isEraser ? 'destination-out' : 'source-over';
+        ctx.strokeStyle = inkColor;
+        ctx.lineWidth = isEraser ? Math.max(14, brushWidth * 3.2) : brushWidth;
+        ctx.lineCap = 'round';
+        ctx.lineJoin = 'round';
+        ctx.beginPath();
+        ctx.moveTo(lastMid.x, lastMid.y);
+        ctx.quadraticCurveTo(lastPt.x, lastPt.y, mid.x, mid.y);
+        ctx.stroke();
+        ctx.restore();
+        lastPt = pt;
+        lastMid = mid;
+      });
+
+      function stopDrawing() {
+        drawing = false;
+        lastPt = null;
+        lastMid = null;
+      }
+      canvas.addEventListener('pointerup', stopDrawing);
+      canvas.addEventListener('pointercancel', stopDrawing);
+
+      const inkColorInput = document.getElementById('inkColorInput');
+      inkColorInput.addEventListener('input', (e) => {
+        inkColor = e.target.value;
+        syncInkSwatchUI();
+        setEraserMode(false);
+      });
+      syncInkSwatchUI();
+
+      brushSizeBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          brushWidth = parseFloat(btn.dataset.size) || 1.8;
+          brushSizeBtns.forEach(b => {
+            const active = b === btn;
+            b.classList.toggle('active', active);
+            b.setAttribute('aria-pressed', String(active));
+          });
+          setEraserMode(false);
+        });
+      });
+
+      eraserToggleBtn.addEventListener('click', () => {
+        setEraserMode(!isEraser);
+      });
+
+      dotGridToggleBtn.addEventListener('click', () => {
+        dotGridOn = !dotGridOn;
+        canvasBox.classList.toggle('dot-grid', dotGridOn);
+        dotGridToggleBtn.classList.toggle('active', dotGridOn);
+        dotGridToggleBtn.setAttribute('aria-pressed', String(dotGridOn));
+      });
+
+      undoCanvasBtn.addEventListener('click', () => {
+        if (undoStack.length === 0) return;
+        const prevUrl = undoStack.pop();
+        updateUndoBtn();
+        const rect = canvasBox.getBoundingClientRect();
+        const img = new Image();
+        img.onload = () => {
+          ctx.clearRect(0, 0, rect.width, rect.height);
+          ctx.drawImage(img, 0, 0, rect.width, rect.height);
+        };
+        img.src = prevUrl;
+        playChime(440, 0.08);
+      });
+
+      paperBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          paperColor = btn.dataset.paper;
+          paperIsDark = btn.dataset.dark === 'true';
+          paperBtns.forEach(b => {
+            const active = b === btn;
+            b.classList.toggle('active', active);
+            b.setAttribute('aria-pressed', String(active));
+          });
+          canvasBox.style.setProperty('--paper-bg', paperColor);
+          canvasBox.style.setProperty('--paper-dot', paperIsDark ? 'rgba(243, 237, 227, 0.22)' : 'rgba(29, 27, 24, 0.22)');
+          if (paperIsDark && inkColor === '#1D1B18') {
+            inkColor = '#F3EDE3';
+            syncInkSwatchUI();
+          } else if (!paperIsDark && inkColor === '#F3EDE3') {
+            inkColor = '#1D1B18';
+            syncInkSwatchUI();
+          }
+        });
+      });
+
+      function randomStampPos() {
+        const rect = canvas.getBoundingClientRect();
+        return {
+          cx: 40 + Math.random() * Math.max(40, rect.width - 80),
+          cy: 40 + Math.random() * Math.max(40, rect.height - 80)
+        };
+      }
+
+      document.getElementById('stampHeartBtn').addEventListener('click', () => {
+        pushUndoSnapshot();
+        setEraserMode(false);
+        const { cx, cy } = randomStampPos();
+        ctx.save();
+        ctx.globalCompositeOperation = 'source-over';
+        ctx.strokeStyle = inkColor;
+        ctx.lineWidth = Math.max(1.45, brushWidth * 0.75);
+        ctx.lineCap = 'round';
+        ctx.lineJoin = 'round';
+        ctx.translate(cx, cy);
+        ctx.rotate((Math.random() - 0.5) * 0.35);
+        ctx.beginPath();
+        ctx.moveTo(0, 11);
+        ctx.bezierCurveTo(-15, 1, -14, -12, -5.5, -12);
+        ctx.bezierCurveTo(-1.8, -12, 0, -9, 0, -7);
+        ctx.bezierCurveTo(0, -9, 1.8, -12, 5.5, -12);
+        ctx.bezierCurveTo(14, -12, 15, 1, 0, 11);
+        ctx.stroke();
+        ctx.restore();
+        playChime(659.25, 0.11);
+      });
+
+      document.getElementById('clearCanvasBtn').addEventListener('click', () => {
+        pushUndoSnapshot();
+        const rect = canvas.getBoundingClientRect();
+        ctx.clearRect(0, 0, rect.width, rect.height);
+        showToast('پاک شد.');
+      });
+
+      document.getElementById('downloadSketchBtn').addEventListener('click', () => {
+        try {
+          const off = document.createElement('canvas');
+          off.width = canvas.width;
+          off.height = canvas.height;
+          const offCtx = off.getContext('2d');
+          offCtx.fillStyle = paperColor;
+          offCtx.fillRect(0, 0, off.width, off.height);
+          if (dotGridOn) {
+            const dpr = Math.min(window.devicePixelRatio || 1, 2);
+            const step = 18 * dpr;
+            offCtx.save();
+            offCtx.fillStyle = paperIsDark ? '#F3EDE3' : '#1D1B18';
+            offCtx.globalAlpha = 0.22;
+            for (let x = 9 * dpr; x < off.width; x += step) {
+              for (let y = 9 * dpr; y < off.height; y += step) {
+                offCtx.beginPath();
+                offCtx.arc(x, y, 1.15 * dpr, 0, Math.PI * 2);
+                offCtx.fill();
+              }
+            }
+            offCtx.restore();
+          }
+          offCtx.drawImage(canvas, 0, 0);
+          const link = document.createElement('a');
+          link.download = 'zahra-sketch.png';
+          link.href = off.toDataURL('image/png');
+          link.click();
+          showToast('عکسش ذخیره شد.');
+        } catch (e) {
+          showToast('نشد ذخیره بشه.');
+        }
+      });
+
+      /* ================= POCKET, ACHIEVEMENTS & HIDDEN SURPRISE ================= */
+      const pocketModal = document.getElementById('pocketModal');
+      const secretModal = document.getElementById('secretModal');
+      const savedList = document.getElementById('savedList');
+      const achievementsGrid = document.getElementById('achievementsGrid');
+
+      const achievementMeta = [
+        { key: 'started', title: 'شروع کردی', desc: 'صفحه رو باز کردی و اومدی پایین.' },
+        { key: 'smiles5', title: '۵ تا پیام لبخند', desc: 'پنج بار دکمه لبخند رو زدی.' },
+        { key: 'machineUsed', title: 'اولین تعریف یهویی', desc: 'بخش تعریف یهویی رو امتحان کردی.' },
+        { key: 'gameWon', title: 'برنده بازی حافظه', desc: 'همه ۶ جفت رو پیدا کردی.' },
+        { key: 'secretFound', title: 'بخش مخفی', desc: 'یادداشتای قایم‌شده رو پیدا کردی!' }
+      ];
+
+      function renderPocketModal() {
+        achievementsGrid.innerHTML = '';
+        achievementMeta.forEach(a => {
+          const unlocked = Boolean(appState.achievements[a.key]);
+          const card = document.createElement('div');
+          card.className = 'ach-card' + (unlocked ? ' unlocked' : '');
+          card.innerHTML =
+            '<span class="ach-title">' + (unlocked ? '✓ ' : '○ ') + a.title + '</span>' +
+            '<span>' + a.desc + '</span>';
+          achievementsGrid.appendChild(card);
+        });
+
+        savedList.innerHTML = '';
+        if (appState.savedMessages.length === 0) {
+          const empty = document.createElement('p');
+          empty.style.cssText = 'font-size:0.88rem;color:var(--ink-muted);text-align:center;padding:1rem 0';
+          empty.textContent = 'هنوز پیامی ذخیره نکردی. هر کدوم خوشت اومد بزن روی «نگه‌ش دار».';
+          savedList.appendChild(empty);
+        } else {
+          appState.savedMessages.forEach(msg => {
+            const item = document.createElement('div');
+            item.className = 'saved-item';
+            const p = document.createElement('p');
+            p.textContent = msg;
+            const actions = document.createElement('div');
+            actions.className = 'saved-item-actions';
+
+            const cBtn = document.createElement('button');
+            cBtn.type = 'button';
+            cBtn.className = 'btn-ghost';
+            cBtn.style.minHeight = '32px';
+            cBtn.textContent = 'کپی';
+            cBtn.addEventListener('click', () => copyText(msg));
+
+            const rBtn = document.createElement('button');
+            rBtn.type = 'button';
+            rBtn.className = 'btn-ghost';
+            rBtn.style.minHeight = '32px';
+            rBtn.textContent = 'حذف';
+            rBtn.addEventListener('click', () => {
+              toggleSaveMessage(msg);
+              renderPocketModal();
+            });
+
+            actions.appendChild(cBtn);
+            actions.appendChild(rBtn);
+            item.appendChild(p);
+            item.appendChild(actions);
+            savedList.appendChild(item);
+          });
+        }
+      }
+
+      function syncSaveButtons() {
+        renderDaily();
+        renderCompliment(false);
+        renderMood();
+        const tMsg = currentTicketText || ticketText.textContent.trim();
+        ticketSaveBtn.classList.toggle('saved', isSaved(tMsg));
+        ticketSaveBtn.textContent = isSaved(tMsg) ? 'ذخیره شده ✓' : 'نگه‌ش دار';
+        smileSaveBtn.classList.toggle('saved', isSaved(currentSmile));
+        smileSaveBtn.textContent = isSaved(currentSmile) ? 'ذخیره شده ✓' : 'نگه‌ش دار';
+      }
+
+      function openModal(el) {
+        el.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      }
+      function closeModal(el) {
+        el.classList.remove('open');
+        if (!pocketModal.classList.contains('open') && !secretModal.classList.contains('open')) {
+          document.body.style.overflow = '';
+        }
+      }
+
+      document.getElementById('openPocketBtn').addEventListener('click', () => {
+        renderPocketModal();
+        openModal(pocketModal);
+      });
+      document.getElementById('closePocketBtn').addEventListener('click', () => closeModal(pocketModal));
+      document.getElementById('closePocketBtn2').addEventListener('click', () => closeModal(pocketModal));
+      pocketModal.addEventListener('click', (e) => {
+        if (e.target === pocketModal) closeModal(pocketModal);
+      });
+
+      // Reset experience with inline two-step confirmation
+      let resetConfirmArmed = false;
+      const resetProgressBtn = document.getElementById('resetProgressBtn');
+      resetProgressBtn.addEventListener('click', () => {
+        if (!resetConfirmArmed) {
+          resetConfirmArmed = true;
+          resetProgressBtn.textContent = 'مطمئنی؟ دوباره بزن پاک بشه';
+          setTimeout(() => {
+            resetConfirmArmed = false;
+            resetProgressBtn.textContent = 'پاک کردن همه‌چی';
+          }, 4000);
+          return;
+        }
+        resetConfirmArmed = false;
+        resetProgressBtn.textContent = 'پاک کردن همه‌چی';
+        appState = JSON.parse(JSON.stringify(defaultState));
+        persist();
+        applyTheme('light');
+        applyMotion(false);
+        currentTicketText = '';
+        ticketText.textContent = 'اون دکمه رو بزن تا اولین یادداشتِ یهویی بیاد بیرون.';
+        ticketSerial.textContent = 'یادداشت #۰۰۱';
+        ticketActions.style.display = 'none';
+        updateMachineCount();
+        updateSmileCounter();
+        updateBestLabel();
+        initGame();
+        syncSaveButtons();
+        renderPocketModal();
+        showToast('همه‌چی از اول شروع شد.');
+      });
+
+      // Hidden Surprise Triggers:
+      // 1) Subtle star button at bottom of closing card
+      // 2) Tapping "برای زهرا" 5 times in top bar
+      function openSecretVault() {
+        unlockAchievement('secretFound', 'بخش مخفی');
+        playChime(783.99, 0.25);
+        launchCelebrationSparks();
+        openModal(secretModal);
+      }
+
+      document.getElementById('secretVaultBtn').addEventListener('click', openSecretVault);
+
+      let brandTaps = 0;
+      let brandTapTimer = null;
+      document.getElementById('brandSecretTrigger').addEventListener('click', () => {
+        brandTaps += 1;
+        clearTimeout(brandTapTimer);
+        if (brandTaps >= 5) {
+          brandTaps = 0;
+          openSecretVault();
+        } else {
+          brandTapTimer = setTimeout(() => { brandTaps = 0; }, 1800);
+        }
+      });
+
+      document.getElementById('closeSecretBtn').addEventListener('click', () => closeModal(secretModal));
+      secretModal.addEventListener('click', (e) => {
+        if (e.target === secretModal) closeModal(secretModal);
+      });
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          closeModal(pocketModal);
+          closeModal(secretModal);
+        }
+      });
+
+      /* ================= TOUCH SWIPE (CHAPTERS 02 & 07) ================= */
+      function attachSwipe(el, onNext, onPrev) {
+        if (!el) return;
+        let startX = 0;
+        let startY = 0;
+        let tracking = false;
+
+        el.addEventListener('touchstart', (e) => {
+          if (e.touches.length !== 1) return;
+          startX = e.touches[0].clientX;
+          startY = e.touches[0].clientY;
+          tracking = true;
+        }, { passive: true });
+
+        el.addEventListener('touchend', (e) => {
+          if (!tracking || e.changedTouches.length !== 1) return;
+          tracking = false;
+          const dx = e.changedTouches[0].clientX - startX;
+          const dy = e.changedTouches[0].clientY - startY;
+          if (Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy) * 1.25) {
+            if (dx > 0) {
+              onNext();
+            } else {
+              onPrev();
+            }
+          }
+        }, { passive: true });
+      }
+
+      const compGoNext = () => {
+        compIndex = (compIndex + 1) % filteredCompliments.length;
+        renderCompliment('next');
+        playChime(523.25, 0.1);
+      };
+      const compGoPrev = () => {
+        compIndex = (compIndex - 1 + filteredCompliments.length) % filteredCompliments.length;
+        renderCompliment('prev');
+        playChime(440, 0.1);
+      };
+      attachSwipe(document.querySelector('.compliment-stage'), compGoNext, compGoPrev);
+      document.getElementById('compSwipeRight').addEventListener('click', compGoNext);
+      document.getElementById('compSwipeLeft').addEventListener('click', compGoPrev);
+
+      const moodGoNext = () => {
+        const len = moodCategories[activeMoodIdx].messages.length;
+        activeMoodMsgIdx = (activeMoodMsgIdx + 1) % len;
+        renderMood('next');
+        playChime(523.25, 0.09);
+      };
+      const moodGoPrev = () => {
+        const len = moodCategories[activeMoodIdx].messages.length;
+        activeMoodMsgIdx = (activeMoodMsgIdx - 1 + len) % len;
+        renderMood('prev');
+        playChime(440, 0.09);
+      };
+      attachSwipe(document.querySelector('.mood-stage'), moodGoNext, moodGoPrev);
+      document.getElementById('moodSwipeRight').addEventListener('click', moodGoNext);
+      document.getElementById('moodSwipeLeft').addEventListener('click', moodGoPrev);
+
+      /* ================= SUBTLE SCROLL REVEAL ================= */
+      const prefersReduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if ('IntersectionObserver' in window && !appState.reducedMotion && !prefersReduced) {
+        const revealObserver = new IntersectionObserver((entries, obs) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.remove('reveal-pending');
+              entry.target.classList.add('revealed');
+              obs.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.08, rootMargin: '0px 0px -28px 0px' });
+
+        chapters.forEach(sec => {
+          const rect = sec.getBoundingClientRect();
+          if (rect.top > window.innerHeight * 0.92) {
+            sec.classList.add('reveal-ready', 'reveal-pending');
+            revealObserver.observe(sec);
+          }
+        });
+      }
+
+      updatePocketBadge();
+      syncSaveButtons();
+    })();
+  </script>
+</body>
+</html>
